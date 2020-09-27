@@ -10,6 +10,7 @@ testbed:
     line: '%ENV{PYATS_PASSWORD}'
 devices:
   terminal_server:
+    alias: uut
     os: linux
     type: linux
     connections:
@@ -19,7 +20,7 @@ devices:
         username: admin
         password: C!sco123
   iosv-2:
-    alias: uut
+    alias: iosv-2
     os: iosxe
     type: router
     series: iosv
@@ -35,7 +36,7 @@ devices:
         proxy: terminal_server
         command: open /7682fa/n0/0
   iosv-1:
-    alias: helper
+    alias: iosv-1
     os: iosxe
     type: router
     series: iosv
