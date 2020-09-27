@@ -32,7 +32,7 @@ Ping_Test:
         - parallel:
           - execute:
               device: pc1
-              command: "ping -c 3 10.0.2.100"
+              command: "ping -c 3 10.0.2.100 -i 0.01 -W 5"
               include:
                 - "64"
               exclude:
@@ -40,7 +40,7 @@ Ping_Test:
 #    - ping_check_pc3_pc1:
           - execute:
               device: pc3
-              command: "ping -c 3 10.0.1.100"
+              command: "ping -c 3 10.0.1.100 -i 0.01 -W 5"
               include:
                 - "64"
               exclude:
@@ -48,25 +48,25 @@ Ping_Test:
 #    - ping_check_pc4_pc1:
           - execute:
               device: pc4
-              command: "ping -c 3 10.0.1.100"
+              command: "ping -c 3 10.0.1.100 -i 0.01 -W 5"
               exclude:
                 - "100% packet loss"
 #    - ping_pc3_pc4:
           - execute:
               device: pc3
-              command: "ping -c 3 10.0.4.100"
+              command: "ping -c 3 10.0.4.100 -i 0.01 -W 5"
               exclude:
                 - "100% packet loss"
 #    - ping_pc2_pc3:
           - execute:
               device: pc2
-              command: "ping -c 3 10.0.3.100"
+              command: "ping -c 3 10.0.3.100 -i 0.01 -W 5"
               exclude:
                 - "100% packet loss"
 #    - ping_pc2_pc4:
           - execute:
               device: pc2
-              command: "ping -c 3 10.0.4.100"
+              command: "ping -c 3 10.0.4.100 -i 0.01 -W 5"
               exclude:
                 - "100% packet loss"
 OSPF_Cost_Test:
