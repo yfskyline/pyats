@@ -35,6 +35,8 @@ devices:
         protocol: telnet
         proxy: terminal_server
         command: open /7682fa/n0/0
+        arguments:
+          learn_hostname: True
   iosv-1:
     alias: iosv-1
     os: iosxe
@@ -51,6 +53,8 @@ devices:
         protocol: telnet
         proxy: terminal_server
         command: open /7682fa/n2/0
+        arguments:
+          learn_hostname: True
   iosv-4:
     alias: iosv-4
     os: iosxe
@@ -67,6 +71,8 @@ devices:
         protocol: telnet
         proxy: terminal_server
         command: open /7682fa/n3/0
+        arguments:
+          learn_hostname: True
   iosv-3:
     alias: iosv-3
     os: iosxe
@@ -83,6 +89,8 @@ devices:
         protocol: telnet
         proxy: terminal_server
         command: open /7682fa/n4/0
+        arguments:
+          learn_hostname: True
   PC4:
     alias: pc4
     os: linux
@@ -98,6 +106,8 @@ devices:
         protocol: telnet
         proxy: terminal_server
         command: open /7682fa/n1/0
+        arguments:
+          learn_hostname: True
   PC3:
     alias: pc3
     os: linux
@@ -113,6 +123,8 @@ devices:
         protocol: telnet
         proxy: terminal_server
         command: open /7682fa/n5/0
+        arguments:
+          learn_hostname: True
   PC1:
     alias: pc1
     os: linux
@@ -128,6 +140,8 @@ devices:
         protocol: telnet
         proxy: terminal_server
         command: open /7682fa/n6/0
+        arguments:
+          learn_hostname: True
   PC2:
     alias: pc2
     os: linux
@@ -143,6 +157,8 @@ devices:
         protocol: telnet
         proxy: terminal_server
         command: open /7682fa/n7/0
+        arguments:
+          learn_hostname: True
 topology:
   iosv-2:
     interfaces:
