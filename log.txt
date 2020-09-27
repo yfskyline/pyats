@@ -1,0 +1,1361 @@
+2020-09-27T12:53:10: %GENIE-INFO: Generating Genie job file: /home/ubuntu/.pyats/runinfo/job.2020Sep27_12:53:09.869054/job_job.py
+2020-09-27T12:53:10: %EASYPY-INFO: Starting job run: job
+2020-09-27T12:53:10: %EASYPY-INFO: Runinfo directory: /home/ubuntu/.pyats/runinfo/job.2020Sep27_12:53:09.869054
+2020-09-27T12:53:10: %EASYPY-INFO: --------------------------------------------------------------------------------
+2020-09-27T12:53:10: %EASYPY-INFO: Testbed file /home/ubuntu/pyats/OSPF/testbed.yaml exists and is readable.
+2020-09-27T12:53:12: %EASYPY-INFO: Starting task execution: Task-1
+2020-09-27T12:53:12: %EASYPY-INFO:     test harness = genie.harness
+2020-09-27T12:53:12: %EASYPY-INFO:     testscript   = /home/ubuntu/.local/share/virtualenvs/pyats-6hd_HpJ9/lib/python3.8/site-packages/genie/harness/genie_testscript.py
+2020-09-27T12:53:12: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:12: %GENIE-INFO: |                            Genie datafiles used:                             |
+2020-09-27T12:53:12: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:12: %GENIE-INFO: Trigger datafile          | /home/ubuntu/pyats/OSPF/blitz.yaml
+2020-09-27T12:53:12: %GENIE-INFO: Verification  datafile    | 
+2020-09-27T12:53:12: %GENIE-INFO: Pts datafile              | /home/ubuntu/.local/share/virtualenvs/pyats-6hd_HpJ9/lib/python3.8/site-packages/genie/libs/sdk/genie_yamls/pts_datafile.yaml
+2020-09-27T12:53:12: %GENIE-INFO: Subsection datafile       | /home/ubuntu/pyats/subsection_datafile.yaml
+2020-09-27T12:53:12: %GENIE-INFO: Config datafile           | None
+2020-09-27T12:53:12: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:12: %AETEST-INFO: |                            Starting common setup                             |
+2020-09-27T12:53:12: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:12: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:12: %AETEST-INFO: |                         Starting subsection connect                          |
+2020-09-27T12:53:12: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:12: %GENIE-INFO: Connect to all the devices described in the 'Mapping Datafile' and 'Testbed file': terminal_server, iosv-2, iosv-1, iosv-4, iosv-3, PC4, PC3, PC1, PC2
+2020-09-27T12:53:12: %GENIE-INFO: For more information visit Genie connection section documentation: https://pubhub.devnetcloud.com/media/genie-docs/docs//harness/user/gettingstarted.html#set-up
+
+
+2020-09-27 12:53:14,168: %UNICON-INFO: +++ terminal_server logfile /home/ubuntu/.pyats/runinfo/job.2020Sep27_12:53:09.869054/terminal_server-cli-1601211194.log +++
+
+2020-09-27 12:53:14,174: %UNICON-INFO: +++ Unicon plugin linux +++
+
+2020-09-27 12:53:14,188: %UNICON-INFO: +++ iosv-2 logfile /home/ubuntu/.pyats/runinfo/job.2020Sep27_12:53:09.869054/iosv-2-cli-1601211194.log +++
+
+2020-09-27 12:53:14,195: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.71.158.154, id: 139676130108752 +++
+2020-09-27 12:53:14,202: %UNICON-INFO: +++ iosv-4 logfile /home/ubuntu/.pyats/runinfo/job.2020Sep27_12:53:09.869054/iosv-4-cli-1601211194.log +++
+
+2020-09-27 12:53:14,203: %UNICON-INFO: +++ iosv-1 logfile /home/ubuntu/.pyats/runinfo/job.2020Sep27_12:53:09.869054/iosv-1-cli-1601211194.log +++
+
+
+2020-09-27 12:53:14,203: %UNICON-INFO: +++ Unicon plugin iosxe +++
+
+2020-09-27 12:53:14,204: %UNICON-INFO: +++ Unicon plugin iosxe +++
+
+2020-09-27 12:53:14,204: %UNICON-INFO: connection to terminal_server
+
+2020-09-27 12:53:14,209: %UNICON-INFO: connection via proxy terminal_server
+
+2020-09-27 12:53:14,210: %UNICON-INFO: +++ iosv-3 logfile /home/ubuntu/.pyats/runinfo/job.2020Sep27_12:53:09.869054/iosv-3-cli-1601211194.log +++
+
+2020-09-27 12:53:14,214: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.71.158.154, id: 139675383934784 +++
+2020-09-27 12:53:14,218: %UNICON-INFO: connection via proxy terminal_server
+
+2020-09-27 12:53:14,220: %UNICON-INFO: +++ Unicon plugin iosxe +++
+
+
+2020-09-27 12:53:14,223: %UNICON-INFO: +++ Unicon plugin iosxe +++
+
+2020-09-27 12:53:14,224: %UNICON-INFO: connection to terminal_server
+
+2020-09-27 12:53:14,227: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.71.158.154, id: 139675383931232 +++
+
+2020-09-27 12:53:14,232: %UNICON-INFO: connection via proxy terminal_server
+2020-09-27 12:53:14,235: %UNICON-INFO: connection via proxy terminal_server
+
+
+2020-09-27 12:53:14,240: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.71.158.154, id: 139675383931856 +++
+2020-09-27 12:53:14,241: %UNICON-INFO: +++ PC3 logfile /home/ubuntu/.pyats/runinfo/job.2020Sep27_12:53:09.869054/PC3-cli-1601211194.log +++
+
+
+2020-09-27 12:53:14,247: %UNICON-INFO: connection to terminal_server
+2020-09-27 12:53:14,247: %UNICON-INFO: +++ PC2 logfile /home/ubuntu/.pyats/runinfo/job.2020Sep27_12:53:09.869054/PC2-cli-1601211194.log +++
+
+2020-09-27 12:53:14,248: %UNICON-INFO: +++ Unicon plugin linux +++
+
+2020-09-27 12:53:14,253: %UNICON-INFO: connection to terminal_server
+
+2020-09-27 12:53:14,260: %UNICON-INFO: +++ PC4 logfile /home/ubuntu/.pyats/runinfo/job.2020Sep27_12:53:09.869054/PC4-cli-1601211194.log +++
+2020-09-27 12:53:14,252: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.71.158.154, id: 139675383961008 +++
+
+
+2020-09-27 12:53:14,263: %UNICON-INFO: connection via proxy terminal_serveradmin@10.71.158.154's password: 
+
+
+2020-09-27 12:53:14,263: %UNICON-INFO: +++ PC1 logfile /home/ubuntu/.pyats/runinfo/job.2020Sep27_12:53:09.869054/PC1-cli-1601211194.log +++
+
+2020-09-27 12:53:14,264: %UNICON-INFO: +++ Unicon plugin linux +++
+
+2020-09-27 12:53:14,268: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.71.158.154, id: 139675383624320 +++
+
+2020-09-27 12:53:14,269: %UNICON-INFO: +++ Unicon plugin linux +++
+
+2020-09-27 12:53:14,274: %UNICON-INFO: connection to terminal_server
+
+2020-09-27 12:53:14,277: %UNICON-INFO: connection via proxy terminal_server
+
+2020-09-27 12:53:14,277: %UNICON-INFO: +++ Unicon plugin linux +++
+
+2020-09-27 12:53:14,279: %UNICON-INFO: connection to terminal_serveradmin@10.71.158.154's password: 
+
+2020-09-27 12:53:14,282: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.71.158.154, id: 139675383962592 +++
+
+2020-09-27 12:53:14,285: %UNICON-INFO: connection via proxy terminal_server
+
+2020-09-27 12:53:14,286: %UNICON-INFO: connection via proxy terminal_server
+
+2020-09-27 12:53:14,288: %UNICON-INFO: connection to terminal_server
+
+2020-09-27 12:53:14,292: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.71.158.154, id: 139675384039216 +++admin@10.71.158.154's password: 
+
+2020-09-27 12:53:14,301: %UNICON-INFO: +++ connection to spawn: ssh -l admin 10.71.158.154, id: 139675383151008 +++
+
+2020-09-27 12:53:14,302: %UNICON-INFO: connection to terminal_server
+
+2020-09-27 12:53:14,305: %UNICON-INFO: connection to terminal_server
+admin@10.71.158.154's password: admin@10.71.158.154's password: 
+
+
+admin@10.71.158.154's password: 
+
+
+admin@10.71.158.154's password: admin@10.71.158.154's password: admin@10.71.158.154's password: 
+
+
+
+****
+CML2 Console Server
+Copyright (c) 2020 Cisco Systems, Inc. and/or its affiliates
+****
+
+tab completion works
+list available nodes and node labels / IDs with "list"
+it's also possible to do a "open /lab_1/n0/0" command
+
+
+****
+CML2 Console Server
+Copyright (c) 2020 Cisco Systems, Inc. and/or its affiliates
+****
+
+tab completion works
+list available nodes and node labels / IDs with "list"
+it's also possible to do a "open /lab_1/n0/0" command
+
+
+****
+CML2 Console Server
+Copyright (c) 2020 Cisco Systems, Inc. and/or its affiliates
+****
+
+tab completion works
+list available nodes and node labels / IDs with "list"
+it's also possible to do a "open /lab_1/n0/0" command
+
+
+****
+CML2 Console Server
+Copyright (c) 2020 Cisco Systems, Inc. and/or its affiliates
+****
+
+tab completion works
+list available nodes and node labels / IDs with "list"
+it's also possible to do a "open /lab_1/n0/0" command
+
+
+****
+CML2 Console Server
+Copyright (c) 2020 Cisco Systems, Inc. and/or its affiliates
+****
+
+tab completion works
+list available nodes and node labels / IDs with "list"
+it's also possible to do a "open /lab_1/n0/0" command
+
+
+****
+CML2 Console Server
+Copyright (c) 2020 Cisco Systems, Inc. and/or its affiliates
+****
+
+tab completion works
+list available nodes and node labels / IDs with "list"
+it's also possible to do a "open /lab_1/n0/0" command
+
+
+****
+CML2 Console Server
+Copyright (c) 2020 Cisco Systems, Inc. and/or its affiliates
+****
+
+tab completion works
+list available nodes and node labels / IDs with "list"
+it's also possible to do a "open /lab_1/n0/0" command
+
+
+****
+CML2 Console Server
+Copyright (c) 2020 Cisco Systems, Inc. and/or its affiliates
+****
+
+tab completion works
+list available nodes and node labels / IDs with "list"
+it's also possible to do a "open /lab_1/n0/0" command
+
+
+****
+CML2 Console Server
+Copyright (c) 2020 Cisco Systems, Inc. and/or its affiliates
+****
+
+tab completion works
+list available nodes and node labels / IDs with "list"
+it's also possible to do a "open /lab_1/n0/0" command
+
+[J[2Kconsoles> 
+
+2020-09-27 12:53:17,215: %UNICON-INFO: +++ initializing handle +++
+2020-09-27T12:53:17: %GENIE-INFO: 
+2020-09-27T12:53:17: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:17: %GENIE-INFO: |          Identifying device 'terminal_server' management interface           |
+2020-09-27T12:53:17: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:17: %GENIE-INFO: 
+2020-09-27T12:53:17: %GENIE-INFO: Device 'terminal_server' does not have a management interface configured which could be found
+[J[2Kconsoles> 
+
+2020-09-27 12:53:17,271: %UNICON-INFO: +++ initializing handle +++[J[2Kconsoles> 
+
+
+2020-09-27 12:53:17,271: %UNICON-INFO: +++ initializing handle +++
+
+2020-09-27 12:53:17,274: %UNICON-INFO: connection to iosv-4
+2020-09-27 12:53:17,274: %UNICON-INFO: connection to iosv-2
+
+[J[2Kconsoles> o[J[2Kconsoles> op[J[2Kconsoles> ope[J[2Kconsoles> open[J[2Kconsoles> open [J[2Kconsoles> open /[J[2Kconsoles> open /7[J[2Kconsoles> open /76[J[2Kconsoles> open /768[J[2Kconsoles> open /7682[J[2Kconsoles> open /7682f[J[2Kconsoles> open /7682fa[J[2Kconsoles> open /7682fa/[J[2Kconsoles> open /7682fa/n[J[2Kconsoles> open /7682fa/n3[J[2Kconsoles> open /7682fa/n3/[J[2Kconsoles> open /7682fa/n3/0[J[2Kconsoles> open /7682fa/n3/0[J[2Kconsoles> open /7682fa/n3/0
+Connecting to console for iosv-4
+[J[2Kconsoles> o[J[2Kconsoles> op[J[2Kconsoles> ope[J[2Kconsoles> open[J[2Kconsoles> open [J[2Kconsoles> open /[J[2Kconsoles> open /7[J[2Kconsoles> open /76[J[2Kconsoles> open /768[J[2Kconsoles> open /7682[J[2Kconsoles> open /7682f[J[2Kconsoles> open /7682fa[J[2Kconsoles> open /7682fa/[J[2Kconsoles> open /7682fa/n[J[2Kconsoles> open /7682fa/n0[J[2Kconsoles> open /7682fa/n0/[J[2Kconsoles> open /7682fa/n0/0[J[2Kconsoles> open /7682fa/n0/0[J[2Kconsoles> open /7682fa/n0/0
+Connecting to console for iosv-2
+[J[2Kconsoles> Connected to terminalserver.
+Escape character is '^]'.
+[J[2Kconsoles> 
+[J[2Kconsoles> [J[2Kconsoles> 
+2020-09-27 12:53:17,292: %UNICON-INFO: +++ initializing handle +++
+
+
+2020-09-27 12:53:17,293: %UNICON-INFO: +++ initializing handle +++
+Connected to terminalserver.
+Escape character is '^]'.
+[J[2Kconsoles> 
+
+2020-09-27 12:53:17,293: %UNICON-INFO: +++ initializing handle +++
+
+
+2020-09-27 12:53:17,294: %UNICON-INFO: +++ initializing handle +++
+
+
+2020-09-27 12:53:17,297: %UNICON-INFO: +++ initializing handle +++
+
+2020-09-27 12:53:17,300: %UNICON-INFO: connection to iosv-1
+2020-09-27 12:53:17,300: %UNICON-INFO: connection to iosv-3
+
+2020-09-27 12:53:17,300: %UNICON-INFO: connection to PC3
+
+2020-09-27 12:53:17,302: %UNICON-INFO: connection to PC4
+[J[2Kconsoles> o[J[2Kconsoles> op[J[2Kconsoles> ope[J[2Kconsoles> open[J[2Kconsoles> open [J[2Kconsoles> open /[J[2Kconsoles> open /7[J[2Kconsoles> open /76[J[2Kconsoles> open /768[J[2Kconsoles> open /7682[J[2Kconsoles> open /7682f[J[2Kconsoles> open /7682fa[J[2Kconsoles> open /7682fa/[J[2Kconsoles> open /7682fa/n[J[2Kconsoles> open /7682fa/n2[J[2Kconsoles> open /7682fa/n2/[J[2Kconsoles> open /7682fa/n2/0[J[2Kconsoles> open /7682fa/n2/0[J[2Kconsoles> open /7682fa/n2/0
+Connecting to console for iosv-1
+Connected to terminalserver.
+Escape character is '^]'.
+[J[2Kconsoles> o[J[2Kconsoles> op[J[2Kconsoles> ope[J[2Kconsoles> open[J[2Kconsoles> open [J[2Kconsoles> open /[J[2Kconsoles> open /7[J[2Kconsoles> open /76[J[2Kconsoles> open /768[J[2Kconsoles> open /7682[J[2Kconsoles> open /7682f[J[2Kconsoles> open /7682fa[J[2Kconsoles> open /7682fa/[J[2Kconsoles> open /7682fa/n[J[2Kconsoles> open /7682fa/n5[J[2Kconsoles> open /7682fa/n5/[J[2Kconsoles> open /7682fa/n5/0[J[2Kconsoles> open /7682fa/n5/0[J[2Kconsoles> open /7682fa/n5/0
+Connecting to console for PC3
+
+2020-09-27 12:53:17,304: %UNICON-INFO: connection to PC1[J[2Kconsoles> 
+
+Connected to terminalserver.
+Escape character is '^]'.
+[J[2Kconsoles> o[J[2Kconsoles> op[J[2Kconsoles> ope[J[2Kconsoles> open[J[2Kconsoles> open [J[2Kconsoles> open /[J[2Kconsoles> open /7[J[2Kconsoles> open /76[J[2Kconsoles> open /768[J[2Kconsoles> open /7682[J[2Kconsoles> open /7682f[J[2Kconsoles> open /7682fa[J[2Kconsoles> open /7682fa/[J[2Kconsoles> open /7682fa/n[J[2Kconsoles> open /7682fa/n6[J[2Kconsoles> open /7682fa/n6/[J[2Kconsoles> open /7682fa/n6/0[J[2Kconsoles> open /7682fa/n6/0[J[2Kconsoles> open /7682fa/n6/0
+Connecting to console for PC1
+Connected to terminalserver.
+Escape character is '^]'.
+[J[2Kconsoles> o[J[2Kconsoles> op[J[2Kconsoles> ope[J[2Kconsoles> open[J[2Kconsoles> open [J[2Kconsoles> open /[J[2Kconsoles> open /7[J[2Kconsoles> open /76[J[2Kconsoles> open /768[J[2Kconsoles> open /7682[J[2Kconsoles> open /7682f[J[2Kconsoles> open /7682fa[J[2Kconsoles> open /7682fa/[J[2Kconsoles> open /7682fa/n[J[2Kconsoles> open /7682fa/n4[J[2Kconsoles> open /7682fa/n4/[J[2Kconsoles> open /7682fa/n4/0[J[2Kconsoles> open /7682fa/n4/0[J[2Kconsoles> open /7682fa/n4/0
+Connecting to console for iosv-3
+[J[2Kconsoles> o[J[2Kconsoles> op[J[2Kconsoles> ope[J[2Kconsoles> open[J[2Kconsoles> open [J[2Kconsoles> open /[J[2Kconsoles> open /7[J[2Kconsoles> open /76[J[2Kconsoles> open /768[J[2Kconsoles> open /7682[J[2Kconsoles> open /7682f[J[2Kconsoles> open /7682fa[J[2Kconsoles> open /7682fa/[J[2Kconsoles> open /7682fa/n[J[2Kconsoles> open /7682fa/n1[J[2Kconsoles> open /7682fa/n1/[J[2Kconsoles> open /7682fa/n1/0[J[2Kconsoles> open /7682fa/n1/0[J[2Kconsoles> open /7682fa/n1/0
+Connecting to console for PC4
+Connected to terminalserver.
+Escape character is '^]'.
+
+
+2020-09-27 12:53:17,311: %UNICON-INFO: +++ initializing handle +++
+Connected to terminalserver.
+Escape character is '^]'.
+
+2020-09-27 12:53:17,318: %UNICON-INFO: connection to PC2
+[J[2Kconsoles> o[J[2Kconsoles> op[J[2Kconsoles> ope[J[2Kconsoles> open[J[2Kconsoles> open [J[2Kconsoles> open /[J[2Kconsoles> open /7[J[2Kconsoles> open /76[J[2Kconsoles> open /768[J[2Kconsoles> open /7682[J[2Kconsoles> open /7682f[J[2Kconsoles> open /7682fa[J[2Kconsoles> open /7682fa/[J[2Kconsoles> open /7682fa/n[J[2Kconsoles> open /7682fa/n7[J[2Kconsoles> open /7682fa/n7/[J[2Kconsoles> open /7682fa/n7/0[J[2Kconsoles> open /7682fa/n7/0[J[2Kconsoles> open /7682fa/n7/0
+Connecting to console for PC2
+Connected to terminalserver.
+Escape character is '^]'.
+
+Router#
+Router#
+PC3:~$ [6n
+
+2020-09-27 12:53:17,866: %UNICON-INFO: +++ initializing handle +++
+
+2020-09-27 12:53:17,866: %UNICON-INFO: +++ iosv-4: executing command 'term length 0' +++
+
+Router#
+
+2020-09-27 12:53:17,867: %UNICON-INFO: +++ initializing handle +++
+
+2020-09-27 12:53:17,868: %UNICON-INFO: +++ iosv-2: executing command 'term length 0' +++
+
+PC2:~$ [6n
+Router#
+
+2020-09-27 12:53:17,879: %UNICON-INFO: +++ initializing handle +++
+2020-09-27T12:53:17: %GENIE-INFO: 
+2020-09-27T12:53:17: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:17: %GENIE-INFO: |                Identifying device 'PC3' management interface                 |
+2020-09-27T12:53:17: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:17: %GENIE-INFO: 
+2020-09-27T12:53:17: %GENIE-INFO: Device 'PC3' does not have a management interface configured which could be found
+
+PC1:~$ [6n
+PC4:~$ [6n
+
+2020-09-27 12:53:17,888: %UNICON-INFO: +++ initializing handle +++
+
+2020-09-27 12:53:17,888: %UNICON-INFO: +++ iosv-3: executing command 'term length 0' +++
+
+
+2020-09-27 12:53:17,890: %UNICON-INFO: +++ initializing handle +++
+2020-09-27T12:53:17: %GENIE-INFO: 
+2020-09-27T12:53:17: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:17: %GENIE-INFO: |                Identifying device 'PC2' management interface                 |
+2020-09-27T12:53:17: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:17: %GENIE-INFO: 
+2020-09-27T12:53:17: %GENIE-INFO: Device 'PC2' does not have a management interface configured which could be found
+
+
+2020-09-27 12:53:17,897: %UNICON-INFO: +++ initializing handle +++
+
+2020-09-27 12:53:17,898: %UNICON-INFO: +++ iosv-1: executing command 'term length 0' +++
+term length 0
+Rterm length 0
+R
+
+
+2020-09-27 12:53:17,907: %UNICON-INFO: +++ initializing handle +++
+2020-09-27 12:53:17,907: %UNICON-INFO: +++ initializing handle +++
+
+2020-09-27T12:53:17: %GENIE-INFO: 
+2020-09-27T12:53:17: %GENIE-INFO: 
+2020-09-27T12:53:17: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:17: %GENIE-INFO: |                Identifying device 'PC1' management interface                 |
+2020-09-27T12:53:17: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:17: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:17: %GENIE-INFO: |                Identifying device 'PC4' management interface                 |
+2020-09-27T12:53:17: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:17: %GENIE-INFO: 
+2020-09-27T12:53:17: %GENIE-INFO: 
+2020-09-27T12:53:17: %GENIE-INFO: Device 'PC1' does not have a management interface configured which could be found
+2020-09-27T12:53:17: %GENIE-INFO: Device 'PC4' does not have a management interface configured which could be found
+term length 0
+Router#outer#outer#term length 0
+Router#
+
+
+
+
+2020-09-27 12:53:18,126: %UNICON-INFO: +++ iosv-1: executing command 'term width 0' +++
+
+2020-09-27 12:53:18,127: %UNICON-INFO: +++ iosv-4: executing command 'term width 0' +++
+
+2020-09-27 12:53:18,127: %UNICON-INFO: +++ iosv-3: executing command 'term width 0' +++
+
+2020-09-27 12:53:18,128: %UNICON-INFO: +++ iosv-2: executing command 'term width 0' +++
+term width 0
+Router#term width 0
+Router#term width 0
+Router#term width 0
+Router#
+
+
+
+
+2020-09-27 12:53:18,321: %UNICON-INFO: +++ iosv-1: configure +++
+
+2020-09-27 12:53:18,322: %UNICON-INFO: +++ iosv-3: configure +++
+2020-09-27 12:53:18,322: %UNICON-INFO: +++ iosv-2: configure +++
+
+
+2020-09-27 12:53:18,323: %UNICON-INFO: +++ iosv-4: configure +++
+config term
+Enter configurationconfig term
+Enter configurationconfig term
+Enter configuration commands, onconfig term
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)# commands, one per line.  End with CNTL/Z.
+Router(config)#e per line.  End with CNTL/Z.
+Router(config)# commands, one per line.  End with CNTL/Z.
+Router(config)#no logging console
+Router(config)#no logging console
+Router(config)#no logging console
+Router(config)#no logging console
+Router(config)#line console 0
+Router(config-line)#line console 0
+Router(config-line)#line console 0
+Router(config-line)#line console 0
+Router(config-line)#exec-timeout 0
+Router(config-line)#exec-timeout 0
+Router(config-line)#exec-timeout 0
+Router(config-line)#exec-timeout 0
+Router(config-line)#end
+Router#end
+Router#end
+Router#
+end
+Router#
+
+
+2020-09-27T12:53:18: %GENIE-INFO: 
+2020-09-27T12:53:18: %GENIE-INFO: 
+2020-09-27T12:53:18: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:18: %GENIE-INFO: |               Identifying device 'iosv-1' management interface               |
+2020-09-27T12:53:18: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:18: %GENIE-INFO: 
+2020-09-27T12:53:18: %GENIE-INFO: 
+2020-09-27T12:53:18: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:18: %GENIE-INFO: |               Identifying device 'iosv-3' management interface               |
+2020-09-27T12:53:18: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:18: %GENIE-INFO: Device 'iosv-1' does not have a management interface configured which could be found
+2020-09-27T12:53:18: %GENIE-INFO: 
+2020-09-27T12:53:18: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:18: %GENIE-INFO: |               Identifying device 'iosv-4' management interface               |
+2020-09-27T12:53:18: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:18: %GENIE-INFO: 
+2020-09-27T12:53:18: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:18: %GENIE-INFO: |               Identifying device 'iosv-2' management interface               |
+2020-09-27T12:53:18: %GENIE-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:18: %GENIE-INFO: 
+2020-09-27T12:53:18: %GENIE-INFO: Device 'iosv-3' does not have a management interface configured which could be found
+2020-09-27T12:53:18: %GENIE-INFO: 
+2020-09-27T12:53:18: %GENIE-INFO: Device 'iosv-4' does not have a management interface configured which could be found
+2020-09-27T12:53:18: %GENIE-INFO: Device 'iosv-2' does not have a management interface configured which could be found
+2020-09-27T12:53:18: %GENIE-INFO: 
+
+2020-09-27T12:53:18: %GENIE-INFO: +====================================================================================================================================================+
+2020-09-27T12:53:18: %GENIE-INFO: | Connection Summary                                                                                                                                 |
+2020-09-27T12:53:18: %GENIE-INFO: +====================================================================================================================================================+
+2020-09-27T12:53:18: %GENIE-INFO: | * Summary for device: PC1                                                                                                                          |
+2020-09-27T12:53:18: %GENIE-INFO: |----------------------------------------------------------------------------------------------------------------------------------------------------|
+2020-09-27T12:53:18: %GENIE-INFO: |     - Connected with alias 'cli' using connection 'a'                                                                                              |
+2020-09-27T12:53:18: %GENIE-INFO: |====================================================================================================================================================|
+2020-09-27T12:53:18: %GENIE-INFO: | * Summary for device: PC2                                                                                                                          |
+2020-09-27T12:53:18: %GENIE-INFO: |----------------------------------------------------------------------------------------------------------------------------------------------------|
+2020-09-27T12:53:18: %GENIE-INFO: |     - Connected with alias 'cli' using connection 'a'                                                                                              |
+2020-09-27T12:53:18: %GENIE-INFO: |====================================================================================================================================================|
+2020-09-27T12:53:18: %GENIE-INFO: | * Summary for device: PC3                                                                                                                          |
+2020-09-27T12:53:18: %GENIE-INFO: |----------------------------------------------------------------------------------------------------------------------------------------------------|
+2020-09-27T12:53:18: %GENIE-INFO: |     - Connected with alias 'cli' using connection 'a'                                                                                              |
+2020-09-27T12:53:18: %GENIE-INFO: |====================================================================================================================================================|
+2020-09-27T12:53:18: %GENIE-INFO: | * Summary for device: PC4                                                                                                                          |
+2020-09-27T12:53:18: %GENIE-INFO: |----------------------------------------------------------------------------------------------------------------------------------------------------|
+2020-09-27T12:53:18: %GENIE-INFO: |     - Connected with alias 'cli' using connection 'a'                                                                                              |
+2020-09-27T12:53:18: %GENIE-INFO: |====================================================================================================================================================|
+2020-09-27T12:53:18: %GENIE-INFO: | * Summary for device: iosv-1                                                                                                                       |
+2020-09-27T12:53:18: %GENIE-INFO: |----------------------------------------------------------------------------------------------------------------------------------------------------|
+2020-09-27T12:53:18: %GENIE-INFO: |     - Connected with alias 'cli' using connection 'a'                                                                                              |
+2020-09-27T12:53:18: %GENIE-INFO: |====================================================================================================================================================|
+2020-09-27T12:53:18: %GENIE-INFO: | * Summary for device: iosv-2                                                                                                                       |
+2020-09-27T12:53:18: %GENIE-INFO: |----------------------------------------------------------------------------------------------------------------------------------------------------|
+2020-09-27T12:53:18: %GENIE-INFO: |     - Connected with alias 'cli' using connection 'a'                                                                                              |
+2020-09-27T12:53:18: %GENIE-INFO: |====================================================================================================================================================|
+2020-09-27T12:53:18: %GENIE-INFO: | * Summary for device: iosv-3                                                                                                                       |
+2020-09-27T12:53:18: %GENIE-INFO: |----------------------------------------------------------------------------------------------------------------------------------------------------|
+2020-09-27T12:53:18: %GENIE-INFO: |     - Connected with alias 'cli' using connection 'a'                                                                                              |
+2020-09-27T12:53:18: %GENIE-INFO: |====================================================================================================================================================|
+2020-09-27T12:53:18: %GENIE-INFO: | * Summary for device: iosv-4                                                                                                                       |
+2020-09-27T12:53:18: %GENIE-INFO: |----------------------------------------------------------------------------------------------------------------------------------------------------|
+2020-09-27T12:53:18: %GENIE-INFO: |     - Connected with alias 'cli' using connection 'a'                                                                                              |
+2020-09-27T12:53:18: %GENIE-INFO: |====================================================================================================================================================|
+2020-09-27T12:53:18: %GENIE-INFO: | * Summary for device: terminal_server                                                                                                              |
+2020-09-27T12:53:18: %GENIE-INFO: |----------------------------------------------------------------------------------------------------------------------------------------------------|
+2020-09-27T12:53:18: %GENIE-INFO: |     - Connected with alias 'cli' using connection 'cli'                                                                                            |
+2020-09-27T12:53:18: %GENIE-INFO: |====================================================================================================================================================|
+2020-09-27T12:53:18: %GENIE-INFO: 
+2020-09-27T12:53:18: %GENIE-INFO: Information about devices and connections can be found in the Testbed file and Mapping datafile
+2020-09-27T12:53:18: %AETEST-INFO: The result of subsection connect is => PASSED
+2020-09-27T12:53:18: %AETEST-INFO: The result of common setup is => PASSED
+2020-09-27T12:53:19: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:19: %AETEST-INFO: |                     Starting testcase OSPF_Cost_Test.uut                     |
+2020-09-27T12:53:19: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:19: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:19: %AETEST-INFO: |                          Starting section lsdb_ios1                          |
+2020-09-27T12:53:19: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:19: %GENIE-INFO: Saved iosv-1 in variable device.name
+2020-09-27T12:53:19: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:19: %AETEST-INFO: :         Starting STEP 1: Starting action execute on device 'iosv-1'          :
+2020-09-27T12:53:19: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:19: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:19: %AETEST-INFO: :    Starting STEP 1.1: Executing 'show ip ospf interface brief' on 'iosv-1    :
+2020-09-27T12:53:19: %AETEST-INFO: :                                      '                                       :
+2020-09-27T12:53:19: %AETEST-INFO: +..............................................................................+
+
+2020-09-27 12:53:19,980: %UNICON-INFO: +++ iosv-1: executing command 'show ip ospf interface brief' +++
+show ip ospf interface brief
+Interface    PID   Area            IP Address/Mask    Cost  State Nbrs F/C
+Gi0/3        1     0.0.0.0         10.0.1.1/24        1     DR    0/0
+Gi0/2        1     0.0.0.0         192.168.3.1/30     100   BDR   1/1
+Gi0/1        1     0.0.0.0         192.168.0.1/30     10    BDR   1/1
+Router#
+2020-09-27T12:53:20: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:20: %AETEST-INFO: :       Starting STEP 1.1.1: Verify that '10' is included in the output        :
+2020-09-27T12:53:20: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:20: %AETEST-INFO: Passed reason: '10' is included in the output
+2020-09-27T12:53:20: %AETEST-INFO: The result of STEP 1.1.1: Verify that '10' is included in the output is => PASSED
+2020-09-27T12:53:20: %AETEST-INFO: The result of STEP 1.1: Executing 'show ip ospf interface brief' on 'iosv-1' is => PASSED
+2020-09-27T12:53:20: %AETEST-INFO: The result of STEP 1: Starting action execute on device 'iosv-1' is => PASSED
+2020-09-27T12:53:20: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:20: %AETEST-INFO: :           Starting STEP 2: Starting action api on device 'iosv-2'            :
+2020-09-27T12:53:20: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:20: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:20: %AETEST-INFO: :    Starting STEP 2.1: Calling API 'get_ospf_neighbors_in_state' on 'iosv-    :
+2020-09-27T12:53:20: %AETEST-INFO: :                                      2'                                      :
+2020-09-27T12:53:20: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:20: %GENIE-INFO: Getting all ospf neighbors that are in state: 'full'.
+
+2020-09-27 12:53:20,668: %UNICON-INFO: +++ iosv-2: executing command 'show ip ospf neighbor' +++
+show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+10.0.0.3          1   FULL/DR         00:00:39    192.168.1.2     GigabitEthernet0/2
+10.0.0.1          1   FULL/BDR        00:00:39    192.168.0.1     GigabitEthernet0/1
+Router#
+2020-09-27T12:53:21: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:21: %AETEST-INFO: :    Starting STEP 2.1.1: Verify that '['10.0.0.3', '10.0.0.1']' is include    :
+2020-09-27T12:53:21: %AETEST-INFO: :                               d in the output                                :
+2020-09-27T12:53:21: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:21: %AETEST-INFO: Passed reason: The result "['10.0.0.3', '10.0.0.1']" is "==" to "['10.0.0.3', '10.0.0.1']" provided in the trigger datafile"
+2020-09-27T12:53:21: %AETEST-INFO: The result of STEP 2.1.1: Verify that '['10.0.0.3', '10.0.0.1']' is included in the output is => PASSED
+2020-09-27T12:53:21: %AETEST-INFO: The result of STEP 2.1: Calling API 'get_ospf_neighbors_in_state' on 'iosv-2' is => PASSED
+2020-09-27T12:53:21: %AETEST-INFO: The result of STEP 2: Starting action api on device 'iosv-2' is => PASSED
+2020-09-27T12:53:21: %GENIE-INFO: Saved passed in variable lsdb_ios1
+2020-09-27T12:53:21: %GENIE-INFO: Saved passed in variable OSPF_Cost_Test.lsdb_ios1
+2020-09-27T12:53:21: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:21: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:53:21: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:21: %AETEST-INFO: STEP 1 - Starting action execute on device 'iosv-1'    Passed
+2020-09-27T12:53:21: %AETEST-INFO: STEP 1.1 - Executing 'show ip ospf interface brief' on 'iosv-1'    Passed
+2020-09-27T12:53:21: %AETEST-INFO: STEP 1.1.1 - Verify that '10' is included in the output    Passed
+2020-09-27T12:53:21: %AETEST-INFO: STEP 2 - Starting action api on device 'iosv-2'       Passed
+2020-09-27T12:53:21: %AETEST-INFO: STEP 2.1 - Calling API 'get_ospf_neighbors_in_state' on 'iosv-2'    Passed
+2020-09-27T12:53:21: %AETEST-INFO: STEP 2.1.1 - Verify that '['10.0.0.3', '10.0.0.1']' is included in the output    Passed
+2020-09-27T12:53:21: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:53:21: %AETEST-INFO: The result of section lsdb_ios1 is => PASSED
+2020-09-27T12:53:21: %AETEST-INFO: The result of testcase OSPF_Cost_Test.uut is => PASSED
+2020-09-27T12:53:21: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:21: %AETEST-INFO: |                     Starting testcase OSPF_LSDB_Test.uut                     |
+2020-09-27T12:53:21: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:21: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:21: %AETEST-INFO: |                         Starting section ping_check                          |
+2020-09-27T12:53:21: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:21: %GENIE-INFO: Saved iosv-2 in variable device.name
+2020-09-27T12:53:21: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:21: %AETEST-INFO: :         Starting STEP 1: Starting action execute on device 'iosv-2'          :
+2020-09-27T12:53:21: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:21: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:21: %AETEST-INFO: :       Starting STEP 1.1: Executing 'show ip ospf database' on 'iosv-2'       :
+2020-09-27T12:53:21: %AETEST-INFO: +..............................................................................+
+
+2020-09-27 12:53:21,237: %UNICON-INFO: +++ iosv-2: executing command 'show ip ospf database' +++
+show ip ospf database
+
+            OSPF Router with ID (10.0.0.2) (Process ID 1)
+
+		Router Link States (Area 0.0.0.0)
+
+Link ID         ADV Router      Age         Seq#       Checksum Link count
+10.0.0.1        10.0.0.1        762         0x80000196 0x00AF8C 3
+10.0.0.2        10.0.0.2        1244        0x80000194 0x001088 3
+10.0.0.3        10.0.0.3        894         0x800001CD 0x00F265 3
+10.0.0.4        10.0.0.4        895         0x800001BE 0x00CE36 3
+
+		Net Link States (Area 0.0.0.0)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+192.168.0.2     10.0.0.2        1244        0x8000018F 0x001807
+192.168.1.2     10.0.0.3        698         0x80000190 0x001DFC
+192.168.2.2     10.0.0.4        900         0x800000A8 0x00F608
+192.168.3.2     10.0.0.4        991         0x8000018F 0x00FE19
+Router#
+2020-09-27T12:53:22: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:22: %AETEST-INFO: :    Starting STEP 1.1.1: Verify that '10.0.0.1' is included in the output     :
+2020-09-27T12:53:22: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:22: %AETEST-INFO: Passed reason: '10.0.0.1' is included in the output
+2020-09-27T12:53:22: %AETEST-INFO: The result of STEP 1.1.1: Verify that '10.0.0.1' is included in the output is => PASSED
+2020-09-27T12:53:22: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:22: %AETEST-INFO: :    Starting STEP 1.1.2: Verify that '10.0.0.2' is included in the output     :
+2020-09-27T12:53:22: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:22: %AETEST-INFO: Passed reason: '10.0.0.2' is included in the output
+2020-09-27T12:53:22: %AETEST-INFO: The result of STEP 1.1.2: Verify that '10.0.0.2' is included in the output is => PASSED
+2020-09-27T12:53:22: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:22: %AETEST-INFO: :    Starting STEP 1.1.3: Verify that '10.0.0.3' is included in the output     :
+2020-09-27T12:53:22: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:22: %AETEST-INFO: Passed reason: '10.0.0.3' is included in the output
+2020-09-27T12:53:22: %AETEST-INFO: The result of STEP 1.1.3: Verify that '10.0.0.3' is included in the output is => PASSED
+2020-09-27T12:53:22: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:22: %AETEST-INFO: :    Starting STEP 1.1.4: Verify that '10.0.0.4' is included in the output     :
+2020-09-27T12:53:22: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:22: %AETEST-INFO: Passed reason: '10.0.0.4' is included in the output
+2020-09-27T12:53:22: %AETEST-INFO: The result of STEP 1.1.4: Verify that '10.0.0.4' is included in the output is => PASSED
+2020-09-27T12:53:22: %AETEST-INFO: The result of STEP 1.1: Executing 'show ip ospf database' on 'iosv-2' is => PASSED
+2020-09-27T12:53:22: %AETEST-INFO: The result of STEP 1: Starting action execute on device 'iosv-2' is => PASSED
+2020-09-27T12:53:22: %GENIE-INFO: Saved passed in variable ping_check
+2020-09-27T12:53:22: %GENIE-INFO: Saved passed in variable OSPF_LSDB_Test.ping_check
+2020-09-27T12:53:22: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:22: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:53:22: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:22: %AETEST-INFO: STEP 1 - Starting action execute on device 'iosv-2'    Passed
+2020-09-27T12:53:22: %AETEST-INFO: STEP 1.1 - Executing 'show ip ospf database' on 'iosv-2'    Passed
+2020-09-27T12:53:22: %AETEST-INFO: STEP 1.1.1 - Verify that '10.0.0.1' is included in the output    Passed
+2020-09-27T12:53:22: %AETEST-INFO: STEP 1.1.2 - Verify that '10.0.0.2' is included in the output    Passed
+2020-09-27T12:53:22: %AETEST-INFO: STEP 1.1.3 - Verify that '10.0.0.3' is included in the output    Passed
+2020-09-27T12:53:22: %AETEST-INFO: STEP 1.1.4 - Verify that '10.0.0.4' is included in the output    Passed
+2020-09-27T12:53:22: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:53:22: %AETEST-INFO: The result of section ping_check is => PASSED
+2020-09-27T12:53:22: %AETEST-INFO: The result of testcase OSPF_LSDB_Test.uut is => PASSED
+2020-09-27T12:53:22: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:22: %AETEST-INFO: |                  Starting testcase OSPF_Neighbors_Test.uut                   |
+2020-09-27T12:53:22: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:22: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:22: %AETEST-INFO: |                     Starting section check_neighbor_list                     |
+2020-09-27T12:53:22: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:22: %GENIE-INFO: Saved iosv-2 in variable device.name
+2020-09-27T12:53:22: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:22: %AETEST-INFO: :           Starting STEP 1: Starting action api on device 'iosv-2'            :
+2020-09-27T12:53:22: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:22: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:22: %AETEST-INFO: :    Starting STEP 1.1: Calling API 'get_ospf_neighbors_in_state' on 'iosv-    :
+2020-09-27T12:53:22: %AETEST-INFO: :                                      2'                                      :
+2020-09-27T12:53:22: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:22: %GENIE-INFO: Getting all ospf neighbors that are in state: 'full'.
+
+2020-09-27 12:53:22,550: %UNICON-INFO: +++ iosv-2: executing command 'show ip ospf neighbor' +++
+show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+10.0.0.3          1   FULL/DR         00:00:37    192.168.1.2     GigabitEthernet0/2
+10.0.0.1          1   FULL/BDR        00:00:37    192.168.0.1     GigabitEthernet0/1
+Router#
+2020-09-27T12:53:23: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:23: %AETEST-INFO: :    Starting STEP 1.1.1: Verify that '['10.0.0.3', '10.0.0.1']' is include    :
+2020-09-27T12:53:23: %AETEST-INFO: :                               d in the output                                :
+2020-09-27T12:53:23: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:23: %AETEST-INFO: Passed reason: The result "['10.0.0.3', '10.0.0.1']" is "==" to "['10.0.0.3', '10.0.0.1']" provided in the trigger datafile"
+2020-09-27T12:53:23: %AETEST-INFO: The result of STEP 1.1.1: Verify that '['10.0.0.3', '10.0.0.1']' is included in the output is => PASSED
+2020-09-27T12:53:23: %AETEST-INFO: The result of STEP 1.1: Calling API 'get_ospf_neighbors_in_state' on 'iosv-2' is => PASSED
+2020-09-27T12:53:23: %AETEST-INFO: The result of STEP 1: Starting action api on device 'iosv-2' is => PASSED
+2020-09-27T12:53:23: %GENIE-INFO: Saved passed in variable check_neighbor_list
+2020-09-27T12:53:23: %GENIE-INFO: Saved passed in variable OSPF_Neighbors_Test.check_neighbor_list
+2020-09-27T12:53:23: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:23: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:53:23: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:23: %AETEST-INFO: STEP 1 - Starting action api on device 'iosv-2'       Passed
+2020-09-27T12:53:23: %AETEST-INFO: STEP 1.1 - Calling API 'get_ospf_neighbors_in_state' on 'iosv-2'    Passed
+2020-09-27T12:53:23: %AETEST-INFO: STEP 1.1.1 - Verify that '['10.0.0.3', '10.0.0.1']' is included in the output    Passed
+2020-09-27T12:53:23: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:53:23: %AETEST-INFO: The result of section check_neighbor_list is => PASSED
+2020-09-27T12:53:23: %AETEST-INFO: The result of testcase OSPF_Neighbors_Test.uut is => PASSED
+2020-09-27T12:53:23: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:23: %AETEST-INFO: |                 Starting testcase Passive_Interface_Test.uut                 |
+2020-09-27T12:53:23: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:23: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:23: %AETEST-INFO: |                  Starting section verify_passive_interface                   |
+2020-09-27T12:53:23: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:23: %GENIE-INFO: Saved iosv-2 in variable device.name
+2020-09-27T12:53:23: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:23: %AETEST-INFO: :         Starting STEP 1: Starting action execute on device 'iosv-2'          :
+2020-09-27T12:53:23: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:23: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:23: %AETEST-INFO: :         Starting STEP 1.1: Executing 'show ip protocols' on 'iosv-2'         :
+2020-09-27T12:53:23: %AETEST-INFO: +..............................................................................+
+
+2020-09-27 12:53:23,139: %UNICON-INFO: +++ iosv-2: executing command 'show ip protocols' +++
+show ip protocols
+*** IP Routing is NSF aware ***
+
+Routing Protocol is "application"
+  Sending updates every 0 seconds
+  Invalid after 0 seconds, hold down 0, flushed after 0
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Maximum path: 32
+  Routing for Networks:
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+  Distance: (default is 4)
+
+Routing Protocol is "ospf 1"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Router ID 10.0.0.2
+  Number of areas in this router is 1. 1 normal 0 stub 0 nssa
+  Maximum path: 4
+  Routing for Networks:
+    10.0.2.0 0.0.0.255 area 0.0.0.0
+    192.168.0.0 0.0.0.3 area 0.0.0.0
+    192.168.1.0 0.0.0.3 area 0.0.0.0
+  Passive Interface(s):
+    GigabitEthernet0/3
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    10.0.0.3             110      00:15:00
+    10.0.0.1             110      1w2d
+    10.0.0.4             110      00:14:50
+  Distance: (default is 110)
+
+Router#
+2020-09-27T12:53:24: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:24: %AETEST-INFO: :    Starting STEP 1.1.1: Verify that 'GigabitEthernet0/3' is included in t    :
+2020-09-27T12:53:24: %AETEST-INFO: :                                  he output                                   :
+2020-09-27T12:53:24: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:24: %AETEST-INFO: Passed reason: 'GigabitEthernet0/3' is included in the output
+2020-09-27T12:53:24: %AETEST-INFO: The result of STEP 1.1.1: Verify that 'GigabitEthernet0/3' is included in the output is => PASSED
+2020-09-27T12:53:24: %AETEST-INFO: The result of STEP 1.1: Executing 'show ip protocols' on 'iosv-2' is => PASSED
+2020-09-27T12:53:24: %AETEST-INFO: The result of STEP 1: Starting action execute on device 'iosv-2' is => PASSED
+2020-09-27T12:53:24: %GENIE-INFO: Saved passed in variable verify_passive_interface
+2020-09-27T12:53:24: %GENIE-INFO: Saved passed in variable Passive_Interface_Test.verify_passive_interface
+2020-09-27T12:53:24: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:24: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:53:24: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:24: %AETEST-INFO: STEP 1 - Starting action execute on device 'iosv-2'    Passed
+2020-09-27T12:53:24: %AETEST-INFO: STEP 1.1 - Executing 'show ip protocols' on 'iosv-2'    Passed
+2020-09-27T12:53:24: %AETEST-INFO: STEP 1.1.1 - Verify that 'GigabitEthernet0/3' is included in the output    Passed
+2020-09-27T12:53:24: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:53:24: %AETEST-INFO: The result of section verify_passive_interface is => PASSED
+2020-09-27T12:53:24: %AETEST-INFO: The result of testcase Passive_Interface_Test.uut is => PASSED
+2020-09-27T12:53:24: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:24: %AETEST-INFO: |                       Starting testcase Ping_Test.uut                        |
+2020-09-27T12:53:24: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:24: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:24: %AETEST-INFO: |                     Starting section ping_check_pc1_pc2                      |
+2020-09-27T12:53:24: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:24: %GENIE-INFO: Saved PC1 in variable device.name
+2020-09-27T12:53:24: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:24: %AETEST-INFO: :           Starting STEP 1: Starting action execute on device 'PC1'           :
+2020-09-27T12:53:24: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:24: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:24: %AETEST-INFO: :         Starting STEP 1.1: Executing 'ping -c 5 10.0.2.100' on 'PC1'         :
+2020-09-27T12:53:24: %AETEST-INFO: +..............................................................................+
+
+2020-09-27 12:53:24,847: %UNICON-INFO: +++ PC1: executing command 'ping -c 5 10.0.2.100' +++
+ping -c 5 10.0.2.100
+PING 10.0.2.100 (10.0.2.100): 56 data bytes
+64 bytes from 10.0.2.100: seq=0 ttl=42 time=2.667 ms
+64 bytes from 10.0.2.100: seq=1 ttl=42 time=2.437 ms
+64 bytes from 10.0.2.100: seq=2 ttl=42 time=2.035 ms
+64 bytes from 10.0.2.100: seq=3 ttl=42 time=2.870 ms
+64 bytes from 10.0.2.100: seq=4 ttl=42 time=2.788 ms
+
+--- 10.0.2.100 ping statistics ---
+5 packets transmitted, 5 packets received, 0% packet loss
+round-trip min/avg/max = 2.035/2.559/2.870 ms
+PC1:~$ [6n
+2020-09-27T12:53:28: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:28: %AETEST-INFO: :       Starting STEP 1.1.1: Verify that '64' is included in the output        :
+2020-09-27T12:53:28: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:28: %AETEST-INFO: Passed reason: '64' is included in the output
+2020-09-27T12:53:28: %AETEST-INFO: The result of STEP 1.1.1: Verify that '64' is included in the output is => PASSED
+2020-09-27T12:53:28: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:28: %AETEST-INFO: :    Starting STEP 1.1.2: Verify that '100% packet loss' is excluded in the    :
+2020-09-27T12:53:28: %AETEST-INFO: :                                    output                                    :
+2020-09-27T12:53:28: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:28: %AETEST-INFO: Passed reason: '100% packet loss' is excluded in the output
+2020-09-27T12:53:28: %AETEST-INFO: The result of STEP 1.1.2: Verify that '100% packet loss' is excluded in the output is => PASSED
+2020-09-27T12:53:28: %AETEST-INFO: The result of STEP 1.1: Executing 'ping -c 5 10.0.2.100' on 'PC1' is => PASSED
+2020-09-27T12:53:28: %AETEST-INFO: The result of STEP 1: Starting action execute on device 'PC1' is => PASSED
+2020-09-27T12:53:28: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:28: %AETEST-INFO: :                    Starting STEP 2: Starting action sleep                    :
+2020-09-27T12:53:28: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:28: %GENIE-INFO: Sleeping for 3 seconds
+2020-09-27T12:53:31: %AETEST-INFO: The result of STEP 2: Starting action sleep is => PASSED
+2020-09-27T12:53:31: %GENIE-INFO: Saved passed in variable ping_check_pc1_pc2
+2020-09-27T12:53:32: %GENIE-INFO: Saved passed in variable Ping_Test.ping_check_pc1_pc2
+2020-09-27T12:53:32: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:32: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:53:32: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:32: %AETEST-INFO: STEP 1 - Starting action execute on device 'PC1'      Passed
+2020-09-27T12:53:32: %AETEST-INFO: STEP 1.1 - Executing 'ping -c 5 10.0.2.100' on 'PC1'    Passed
+2020-09-27T12:53:32: %AETEST-INFO: STEP 1.1.1 - Verify that '64' is included in the output    Passed
+2020-09-27T12:53:32: %AETEST-INFO: STEP 1.1.2 - Verify that '100% packet loss' is excluded in the output    Passed
+2020-09-27T12:53:32: %AETEST-INFO: STEP 2 - Starting action sleep                        Passed
+2020-09-27T12:53:32: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:53:32: %AETEST-INFO: The result of section ping_check_pc1_pc2 is => PASSED
+2020-09-27T12:53:32: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:32: %AETEST-INFO: |                     Starting section ping_check_pc1_pc3                      |
+2020-09-27T12:53:32: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:32: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:32: %AETEST-INFO: :           Starting STEP 1: Starting action execute on device 'PC1'           :
+2020-09-27T12:53:32: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:32: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:32: %AETEST-INFO: :         Starting STEP 1.1: Executing 'ping -c 5 10.0.3.100' on 'PC1'         :
+2020-09-27T12:53:32: %AETEST-INFO: +..............................................................................+
+
+2020-09-27 12:53:32,005: %UNICON-INFO: +++ PC1: executing command 'ping -c 5 10.0.3.100' +++
+ping -c 5 10.0.3.100
+PING 10.0.3.100 (10.0.3.100): 56 data bytes
+64 bytes from 10.0.3.100: seq=0 ttl=42 time=2.606 ms
+64 bytes from 10.0.3.100: seq=1 ttl=42 time=2.739 ms
+64 bytes from 10.0.3.100: seq=2 ttl=42 time=2.468 ms
+64 bytes from 10.0.3.100: seq=3 ttl=42 time=3.386 ms
+64 bytes from 10.0.3.100: seq=4 ttl=42 time=3.578 ms
+
+--- 10.0.3.100 ping statistics ---
+5 packets transmitted, 5 packets received, 0% packet loss
+round-trip min/avg/max = 2.468/2.955/3.578 ms
+PC1:~$ [6n
+2020-09-27T12:53:36: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:36: %AETEST-INFO: :       Starting STEP 1.1.1: Verify that '64' is included in the output        :
+2020-09-27T12:53:36: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:36: %AETEST-INFO: Passed reason: '64' is included in the output
+2020-09-27T12:53:36: %AETEST-INFO: The result of STEP 1.1.1: Verify that '64' is included in the output is => PASSED
+2020-09-27T12:53:36: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:36: %AETEST-INFO: :    Starting STEP 1.1.2: Verify that '100% packet loss' is excluded in the    :
+2020-09-27T12:53:36: %AETEST-INFO: :                                    output                                    :
+2020-09-27T12:53:36: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:36: %AETEST-INFO: Passed reason: '100% packet loss' is excluded in the output
+2020-09-27T12:53:36: %AETEST-INFO: The result of STEP 1.1.2: Verify that '100% packet loss' is excluded in the output is => PASSED
+2020-09-27T12:53:36: %AETEST-INFO: The result of STEP 1.1: Executing 'ping -c 5 10.0.3.100' on 'PC1' is => PASSED
+2020-09-27T12:53:36: %AETEST-INFO: The result of STEP 1: Starting action execute on device 'PC1' is => PASSED
+2020-09-27T12:53:36: %GENIE-INFO: Saved passed in variable ping_check_pc1_pc3
+2020-09-27T12:53:36: %GENIE-INFO: Saved passed in variable Ping_Test.ping_check_pc1_pc3
+2020-09-27T12:53:36: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:36: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:53:36: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:36: %AETEST-INFO: STEP 1 - Starting action execute on device 'PC1'      Passed
+2020-09-27T12:53:36: %AETEST-INFO: STEP 1.1 - Executing 'ping -c 5 10.0.3.100' on 'PC1'    Passed
+2020-09-27T12:53:36: %AETEST-INFO: STEP 1.1.1 - Verify that '64' is included in the output    Passed
+2020-09-27T12:53:36: %AETEST-INFO: STEP 1.1.2 - Verify that '100% packet loss' is excluded in the output    Passed
+2020-09-27T12:53:36: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:53:36: %AETEST-INFO: The result of section ping_check_pc1_pc3 is => PASSED
+2020-09-27T12:53:36: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:36: %AETEST-INFO: |                     Starting section ping_check_pc1_pc4                      |
+2020-09-27T12:53:36: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:36: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:36: %AETEST-INFO: :           Starting STEP 1: Starting action execute on device 'PC1'           :
+2020-09-27T12:53:36: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:36: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:36: %AETEST-INFO: :         Starting STEP 1.1: Executing 'ping -c 5 10.0.4.100' on 'PC1'         :
+2020-09-27T12:53:36: %AETEST-INFO: +..............................................................................+
+
+2020-09-27 12:53:36,207: %UNICON-INFO: +++ PC1: executing command 'ping -c 5 10.0.4.100' +++
+ping -c 5 10.0.4.100
+PING 10.0.4.100 (10.0.4.100): 56 data bytes
+64 bytes from 10.0.4.100: seq=0 ttl=42 time=3.881 ms
+64 bytes from 10.0.4.100: seq=1 ttl=42 time=4.078 ms
+64 bytes from 10.0.4.100: seq=2 ttl=42 time=4.176 ms
+64 bytes from 10.0.4.100: seq=3 ttl=42 time=3.945 ms
+64 bytes from 10.0.4.100: seq=4 ttl=42 time=3.880 ms
+
+--- 10.0.4.100 ping statistics ---
+5 packets transmitted, 5 packets received, 0% packet loss
+round-trip min/avg/max = 3.880/3.992/4.176 ms
+PC1:~$ [6n
+2020-09-27T12:53:40: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:40: %AETEST-INFO: :    Starting STEP 1.1.1: Verify that '100% packet loss' is excluded in the    :
+2020-09-27T12:53:40: %AETEST-INFO: :                                    output                                    :
+2020-09-27T12:53:40: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:40: %AETEST-INFO: Passed reason: '100% packet loss' is excluded in the output
+2020-09-27T12:53:40: %AETEST-INFO: The result of STEP 1.1.1: Verify that '100% packet loss' is excluded in the output is => PASSED
+2020-09-27T12:53:40: %AETEST-INFO: The result of STEP 1.1: Executing 'ping -c 5 10.0.4.100' on 'PC1' is => PASSED
+2020-09-27T12:53:40: %AETEST-INFO: The result of STEP 1: Starting action execute on device 'PC1' is => PASSED
+2020-09-27T12:53:40: %GENIE-INFO: Saved passed in variable ping_check_pc1_pc4
+2020-09-27T12:53:40: %GENIE-INFO: Saved passed in variable Ping_Test.ping_check_pc1_pc4
+2020-09-27T12:53:40: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:40: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:53:40: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:40: %AETEST-INFO: STEP 1 - Starting action execute on device 'PC1'      Passed
+2020-09-27T12:53:40: %AETEST-INFO: STEP 1.1 - Executing 'ping -c 5 10.0.4.100' on 'PC1'    Passed
+2020-09-27T12:53:40: %AETEST-INFO: STEP 1.1.1 - Verify that '100% packet loss' is excluded in the output    Passed
+2020-09-27T12:53:40: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:53:40: %AETEST-INFO: The result of section ping_check_pc1_pc4 is => PASSED
+2020-09-27T12:53:40: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:40: %AETEST-INFO: |                        Starting section ping_pc3_pc4                         |
+2020-09-27T12:53:40: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:40: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:40: %AETEST-INFO: :           Starting STEP 1: Starting action execute on device 'PC3'           :
+2020-09-27T12:53:40: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:40: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:40: %AETEST-INFO: :         Starting STEP 1.1: Executing 'ping -c 5 10.0.4.100' on 'PC3'         :
+2020-09-27T12:53:40: %AETEST-INFO: +..............................................................................+
+
+2020-09-27 12:53:40,412: %UNICON-INFO: +++ PC3: executing command 'ping -c 5 10.0.4.100' +++
+ping -c 5 10.0.4.100
+PING 10.0.4.100 (10.0.4.100): 56 data bytes
+64 bytes from 10.0.4.100: seq=0 ttl=42 time=1.994 ms
+64 bytes from 10.0.4.100: seq=1 ttl=42 time=2.085 ms
+64 bytes from 10.0.4.100: seq=2 ttl=42 time=2.044 ms
+64 bytes from 10.0.4.100: seq=3 ttl=42 time=2.477 ms
+64 bytes from 10.0.4.100: seq=4 ttl=42 time=2.515 ms
+
+--- 10.0.4.100 ping statistics ---
+5 packets transmitted, 5 packets received, 0% packet loss
+round-trip min/avg/max = 1.994/2.223/2.515 ms
+PC3:~$ [6n
+2020-09-27T12:53:44: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:44: %AETEST-INFO: :    Starting STEP 1.1.1: Verify that '100% packet loss' is excluded in the    :
+2020-09-27T12:53:44: %AETEST-INFO: :                                    output                                    :
+2020-09-27T12:53:44: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:44: %AETEST-INFO: Passed reason: '100% packet loss' is excluded in the output
+2020-09-27T12:53:44: %AETEST-INFO: The result of STEP 1.1.1: Verify that '100% packet loss' is excluded in the output is => PASSED
+2020-09-27T12:53:44: %AETEST-INFO: The result of STEP 1.1: Executing 'ping -c 5 10.0.4.100' on 'PC3' is => PASSED
+2020-09-27T12:53:44: %AETEST-INFO: The result of STEP 1: Starting action execute on device 'PC3' is => PASSED
+2020-09-27T12:53:44: %GENIE-INFO: Saved passed in variable ping_pc3_pc4
+2020-09-27T12:53:44: %GENIE-INFO: Saved passed in variable Ping_Test.ping_pc3_pc4
+2020-09-27T12:53:44: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:44: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:53:44: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:44: %AETEST-INFO: STEP 1 - Starting action execute on device 'PC3'      Passed
+2020-09-27T12:53:44: %AETEST-INFO: STEP 1.1 - Executing 'ping -c 5 10.0.4.100' on 'PC3'    Passed
+2020-09-27T12:53:44: %AETEST-INFO: STEP 1.1.1 - Verify that '100% packet loss' is excluded in the output    Passed
+2020-09-27T12:53:44: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:53:44: %AETEST-INFO: The result of section ping_pc3_pc4 is => PASSED
+2020-09-27T12:53:44: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:44: %AETEST-INFO: |                        Starting section ping_pc2_pc3                         |
+2020-09-27T12:53:44: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:44: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:44: %AETEST-INFO: :           Starting STEP 1: Starting action execute on device 'PC2'           :
+2020-09-27T12:53:44: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:44: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:44: %AETEST-INFO: :         Starting STEP 1.1: Executing 'ping -c 5 10.0.3.100' on 'PC2'         :
+2020-09-27T12:53:44: %AETEST-INFO: +..............................................................................+
+
+2020-09-27 12:53:44,614: %UNICON-INFO: +++ PC2: executing command 'ping -c 5 10.0.3.100' +++
+ping -c 5 10.0.3.100
+PING 10.0.3.100 (10.0.3.100): 56 data bytes
+64 bytes from 10.0.3.100: seq=0 ttl=42 time=3.076 ms
+64 bytes from 10.0.3.100: seq=1 ttl=42 time=2.299 ms
+64 bytes from 10.0.3.100: seq=2 ttl=42 time=2.359 ms
+64 bytes from 10.0.3.100: seq=3 ttl=42 time=2.387 ms
+64 bytes from 10.0.3.100: seq=4 ttl=42 time=2.397 ms
+
+--- 10.0.3.100 ping statistics ---
+5 packets transmitted, 5 packets received, 0% packet loss
+round-trip min/avg/max = 2.299/2.503/3.076 ms
+PC2:~$ [6n
+2020-09-27T12:53:48: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:48: %AETEST-INFO: :    Starting STEP 1.1.1: Verify that '100% packet loss' is excluded in the    :
+2020-09-27T12:53:48: %AETEST-INFO: :                                    output                                    :
+2020-09-27T12:53:48: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:48: %AETEST-INFO: Passed reason: '100% packet loss' is excluded in the output
+2020-09-27T12:53:48: %AETEST-INFO: The result of STEP 1.1.1: Verify that '100% packet loss' is excluded in the output is => PASSED
+2020-09-27T12:53:48: %AETEST-INFO: The result of STEP 1.1: Executing 'ping -c 5 10.0.3.100' on 'PC2' is => PASSED
+2020-09-27T12:53:48: %AETEST-INFO: The result of STEP 1: Starting action execute on device 'PC2' is => PASSED
+2020-09-27T12:53:48: %GENIE-INFO: Saved passed in variable ping_pc2_pc3
+2020-09-27T12:53:48: %GENIE-INFO: Saved passed in variable Ping_Test.ping_pc2_pc3
+2020-09-27T12:53:48: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:48: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:53:48: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:48: %AETEST-INFO: STEP 1 - Starting action execute on device 'PC2'      Passed
+2020-09-27T12:53:48: %AETEST-INFO: STEP 1.1 - Executing 'ping -c 5 10.0.3.100' on 'PC2'    Passed
+2020-09-27T12:53:48: %AETEST-INFO: STEP 1.1.1 - Verify that '100% packet loss' is excluded in the output    Passed
+2020-09-27T12:53:48: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:53:48: %AETEST-INFO: The result of section ping_pc2_pc3 is => PASSED
+2020-09-27T12:53:48: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:48: %AETEST-INFO: |                        Starting section ping_pc2_pc4                         |
+2020-09-27T12:53:48: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:48: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:48: %AETEST-INFO: :           Starting STEP 1: Starting action execute on device 'PC2'           :
+2020-09-27T12:53:48: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:48: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:48: %AETEST-INFO: :         Starting STEP 1.1: Executing 'ping -c 5 10.0.4.100' on 'PC2'         :
+2020-09-27T12:53:48: %AETEST-INFO: +..............................................................................+
+
+2020-09-27 12:53:48,819: %UNICON-INFO: +++ PC2: executing command 'ping -c 5 10.0.4.100' +++
+ping -c 5 10.0.4.100
+PING 10.0.4.100 (10.0.4.100): 56 data bytes
+64 bytes from 10.0.4.100: seq=0 ttl=42 time=4.355 ms
+64 bytes from 10.0.4.100: seq=1 ttl=42 time=3.314 ms
+64 bytes from 10.0.4.100: seq=2 ttl=42 time=2.579 ms
+64 bytes from 10.0.4.100: seq=3 ttl=42 time=2.998 ms
+64 bytes from 10.0.4.100: seq=4 ttl=42 time=2.917 ms
+
+--- 10.0.4.100 ping statistics ---
+5 packets transmitted, 5 packets received, 0% packet loss
+round-trip min/avg/max = 2.579/3.232/4.355 ms
+PC2:~$ [6n
+2020-09-27T12:53:53: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:53: %AETEST-INFO: :    Starting STEP 1.1.1: Verify that '100% packet loss' is excluded in the    :
+2020-09-27T12:53:53: %AETEST-INFO: :                                    output                                    :
+2020-09-27T12:53:53: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:53: %AETEST-INFO: Passed reason: '100% packet loss' is excluded in the output
+2020-09-27T12:53:53: %AETEST-INFO: The result of STEP 1.1.1: Verify that '100% packet loss' is excluded in the output is => PASSED
+2020-09-27T12:53:53: %AETEST-INFO: The result of STEP 1.1: Executing 'ping -c 5 10.0.4.100' on 'PC2' is => PASSED
+2020-09-27T12:53:53: %AETEST-INFO: The result of STEP 1: Starting action execute on device 'PC2' is => PASSED
+2020-09-27T12:53:53: %GENIE-INFO: Saved passed in variable ping_pc2_pc4
+2020-09-27T12:53:53: %GENIE-INFO: Saved passed in variable Ping_Test.ping_pc2_pc4
+2020-09-27T12:53:53: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:53: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:53:53: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:53: %AETEST-INFO: STEP 1 - Starting action execute on device 'PC2'      Passed
+2020-09-27T12:53:53: %AETEST-INFO: STEP 1.1 - Executing 'ping -c 5 10.0.4.100' on 'PC2'    Passed
+2020-09-27T12:53:53: %AETEST-INFO: STEP 1.1.1 - Verify that '100% packet loss' is excluded in the output    Passed
+2020-09-27T12:53:53: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:53:53: %AETEST-INFO: The result of section ping_pc2_pc4 is => PASSED
+2020-09-27T12:53:53: %AETEST-INFO: The result of testcase Ping_Test.uut is => PASSED
+2020-09-27T12:53:53: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:53: %AETEST-INFO: |                     Starting testcase Router_ID_Test.uut                     |
+2020-09-27T12:53:53: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:53: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:53: %AETEST-INFO: |                         Starting section ping_check                          |
+2020-09-27T12:53:53: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:53: %GENIE-INFO: Saved iosv-2 in variable device.name
+2020-09-27T12:53:53: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:53: %AETEST-INFO: :         Starting STEP 1: Starting action execute on device 'iosv-2'          :
+2020-09-27T12:53:53: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:53: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:53: %AETEST-INFO: :         Starting STEP 1.1: Executing 'show ip protocols' on 'iosv-2'         :
+2020-09-27T12:53:53: %AETEST-INFO: +..............................................................................+
+
+2020-09-27 12:53:53,040: %UNICON-INFO: +++ iosv-2: executing command 'show ip protocols' +++
+show ip protocols
+*** IP Routing is NSF aware ***
+
+Routing Protocol is "application"
+  Sending updates every 0 seconds
+  Invalid after 0 seconds, hold down 0, flushed after 0
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Maximum path: 32
+  Routing for Networks:
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+  Distance: (default is 4)
+
+Routing Protocol is "ospf 1"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  Router ID 10.0.0.2
+  Number of areas in this router is 1. 1 normal 0 stub 0 nssa
+  Maximum path: 4
+  Routing for Networks:
+    10.0.2.0 0.0.0.255 area 0.0.0.0
+    192.168.0.0 0.0.0.3 area 0.0.0.0
+    192.168.1.0 0.0.0.3 area 0.0.0.0
+  Passive Interface(s):
+    GigabitEthernet0/3
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+    10.0.0.3             110      00:15:30
+    10.0.0.1             110      1w2d
+    10.0.0.4             110      00:15:20
+  Distance: (default is 110)
+
+Router#
+2020-09-27T12:53:54: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:54: %AETEST-INFO: :    Starting STEP 1.1.1: Verify that 'Router ID 10.0.0.2' is included in t    :
+2020-09-27T12:53:54: %AETEST-INFO: :                                  he output                                   :
+2020-09-27T12:53:54: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:54: %AETEST-INFO: Passed reason: 'Router ID 10.0.0.2' is included in the output
+2020-09-27T12:53:54: %AETEST-INFO: The result of STEP 1.1.1: Verify that 'Router ID 10.0.0.2' is included in the output is => PASSED
+2020-09-27T12:53:54: %AETEST-INFO: The result of STEP 1.1: Executing 'show ip protocols' on 'iosv-2' is => PASSED
+2020-09-27T12:53:54: %AETEST-INFO: The result of STEP 1: Starting action execute on device 'iosv-2' is => PASSED
+2020-09-27T12:53:54: %GENIE-INFO: Saved passed in variable ping_check
+2020-09-27T12:53:54: %GENIE-INFO: Saved passed in variable Router_ID_Test.ping_check
+2020-09-27T12:53:54: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:54: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:53:54: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:53:54: %AETEST-INFO: STEP 1 - Starting action execute on device 'iosv-2'    Passed
+2020-09-27T12:53:54: %AETEST-INFO: STEP 1.1 - Executing 'show ip protocols' on 'iosv-2'    Passed
+2020-09-27T12:53:54: %AETEST-INFO: STEP 1.1.1 - Verify that 'Router ID 10.0.0.2' is included in the output    Passed
+2020-09-27T12:53:54: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:53:54: %AETEST-INFO: The result of section ping_check is => PASSED
+2020-09-27T12:53:54: %AETEST-INFO: The result of testcase Router_ID_Test.uut is => PASSED
+2020-09-27T12:53:54: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:54: %AETEST-INFO: |                    Starting testcase TraceRoute_Test.uut                     |
+2020-09-27T12:53:54: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:54: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:54: %AETEST-INFO: |                     Starting section traceroute_pc2_pc4                      |
+2020-09-27T12:53:54: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:53:54: %GENIE-INFO: Saved PC2 in variable device.name
+2020-09-27T12:53:54: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:54: %AETEST-INFO: :           Starting STEP 1: Starting action execute on device 'PC2'           :
+2020-09-27T12:53:54: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:54: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:53:54: %AETEST-INFO: :        Starting STEP 1.1: Executing 'traceroute 10.0.4.100' on 'PC2'         :
+2020-09-27T12:53:54: %AETEST-INFO: +..............................................................................+
+
+2020-09-27 12:53:54,784: %UNICON-INFO: +++ PC2: executing command 'traceroute 10.0.4.100' +++
+traceroute 10.0.4.100
+traceroute to 10.0.4.100 (10.0.4.100), 30 hops max, 46 byte packets
+ 1  10.0.2.1 (10.0.2.1)  1.459 ms  1.443 ms  1.301 ms
+ 2  192.168.1.2 (192.168.1.2)  2.093 ms  2.351 ms  2.779 ms
+ 3  192.168.2.2 (192.168.2.2)  3.179 ms  3.232 ms  2.891 ms
+ 4  10.0.4.100 (10.0.4.100)  3.308 ms  2.628 ms  2.529 ms
+PC2:~$ [6n
+2020-09-27T12:54:15: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:15: %AETEST-INFO: :    Starting STEP 1.1.1: Verify that '192.168.1.2' is included in the outp    :
+2020-09-27T12:54:15: %AETEST-INFO: :                                      ut                                      :
+2020-09-27T12:54:15: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:15: %AETEST-INFO: Passed reason: '192.168.1.2' is included in the output
+2020-09-27T12:54:15: %AETEST-INFO: The result of STEP 1.1.1: Verify that '192.168.1.2' is included in the output is => PASSED
+2020-09-27T12:54:15: %AETEST-INFO: The result of STEP 1.1: Executing 'traceroute 10.0.4.100' on 'PC2' is => PASSED
+2020-09-27T12:54:15: %AETEST-INFO: The result of STEP 1: Starting action execute on device 'PC2' is => PASSED
+2020-09-27T12:54:15: %GENIE-INFO: Saved passed in variable traceroute_pc2_pc4
+2020-09-27T12:54:15: %GENIE-INFO: Saved passed in variable TraceRoute_Test.traceroute_pc2_pc4
+2020-09-27T12:54:15: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:54:15: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:54:15: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:54:15: %AETEST-INFO: STEP 1 - Starting action execute on device 'PC2'      Passed
+2020-09-27T12:54:15: %AETEST-INFO: STEP 1.1 - Executing 'traceroute 10.0.4.100' on 'PC2'    Passed
+2020-09-27T12:54:15: %AETEST-INFO: STEP 1.1.1 - Verify that '192.168.1.2' is included in the output    Passed
+2020-09-27T12:54:15: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:54:15: %AETEST-INFO: The result of section traceroute_pc2_pc4 is => PASSED
+2020-09-27T12:54:15: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:54:15: %AETEST-INFO: |                       Starting section shut_interface                        |
+2020-09-27T12:54:15: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:54:15: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:15: %AETEST-INFO: :        Starting STEP 1: Starting action configure on device 'iosv-3'         :
+2020-09-27T12:54:15: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:15: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:15: %AETEST-INFO: :                   Starting STEP 1.1: Configuring 'iosv-3'                    :
+2020-09-27T12:54:15: %AETEST-INFO: +..............................................................................+
+
+2020-09-27 12:54:15,051: %UNICON-INFO: +++ iosv-3: configure +++
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface gigabitEthernet 0/2
+Router(config-if)#shutdown
+Router(config-if)#end
+Router#
+2020-09-27T12:54:15: %AETEST-INFO: The result of STEP 1.1: Configuring 'iosv-3' is => PASSED
+2020-09-27T12:54:15: %AETEST-INFO: The result of STEP 1: Starting action configure on device 'iosv-3' is => PASSED
+2020-09-27T12:54:15: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:15: %AETEST-INFO: :                    Starting STEP 2: Starting action sleep                    :
+2020-09-27T12:54:15: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:15: %GENIE-INFO: Sleeping for 3 seconds
+2020-09-27T12:54:18: %AETEST-INFO: The result of STEP 2: Starting action sleep is => PASSED
+2020-09-27T12:54:18: %GENIE-INFO: Saved passed in variable shut_interface
+2020-09-27T12:54:18: %GENIE-INFO: Saved passed in variable TraceRoute_Test.shut_interface
+2020-09-27T12:54:18: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:54:18: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:54:18: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:54:18: %AETEST-INFO: STEP 1 - Starting action configure on device 'iosv-3'    Passed
+2020-09-27T12:54:18: %AETEST-INFO: STEP 1.1 - Configuring 'iosv-3'                       Passed
+2020-09-27T12:54:18: %AETEST-INFO: STEP 2 - Starting action sleep                        Passed
+2020-09-27T12:54:18: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:54:18: %AETEST-INFO: The result of section shut_interface is => PASSED
+2020-09-27T12:54:18: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:54:18: %AETEST-INFO: |                    Starting section traceroute_pc2_pc4.1                     |
+2020-09-27T12:54:18: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:54:18: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:18: %AETEST-INFO: :           Starting STEP 1: Starting action execute on device 'PC2'           :
+2020-09-27T12:54:18: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:18: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:18: %AETEST-INFO: :        Starting STEP 1.1: Executing 'traceroute 10.0.4.100' on 'PC2'         :
+2020-09-27T12:54:18: %AETEST-INFO: +..............................................................................+
+
+2020-09-27 12:54:18,594: %UNICON-INFO: +++ PC2: executing command 'traceroute 10.0.4.100' +++
+traceroute 10.0.4.100
+traceroute to 10.0.4.100 (10.0.4.100), 30 hops max, 46 byte packets
+ 1  10.0.2.1 (10.0.2.1)  1.422 ms  1.387 ms  1.748 ms
+ 2  192.168.0.1 (192.168.0.1)  2.094 ms  3.122 ms  2.070 ms
+ 3  192.168.3.2 (192.168.3.2)  2.824 ms  2.844 ms  2.671 ms
+ 4  10.0.4.100 (10.0.4.100)  3.294 ms  3.070 ms  4.537 ms
+PC2:~$ [6n
+2020-09-27T12:54:38: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:38: %AETEST-INFO: :    Starting STEP 1.1.1: Verify that '192.168.0.1' is included in the outp    :
+2020-09-27T12:54:38: %AETEST-INFO: :                                      ut                                      :
+2020-09-27T12:54:38: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:38: %AETEST-INFO: Passed reason: '192.168.0.1' is included in the output
+2020-09-27T12:54:38: %AETEST-INFO: The result of STEP 1.1.1: Verify that '192.168.0.1' is included in the output is => PASSED
+2020-09-27T12:54:38: %AETEST-INFO: The result of STEP 1.1: Executing 'traceroute 10.0.4.100' on 'PC2' is => PASSED
+2020-09-27T12:54:38: %AETEST-INFO: The result of STEP 1: Starting action execute on device 'PC2' is => PASSED
+2020-09-27T12:54:38: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:38: %AETEST-INFO: :                    Starting STEP 2: Starting action sleep                    :
+2020-09-27T12:54:38: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:38: %GENIE-INFO: Sleeping for 3 seconds
+2020-09-27T12:54:41: %AETEST-INFO: The result of STEP 2: Starting action sleep is => PASSED
+2020-09-27T12:54:41: %GENIE-INFO: Saved passed in variable traceroute_pc2_pc4.1
+2020-09-27T12:54:41: %GENIE-INFO: Saved passed in variable TraceRoute_Test.traceroute_pc2_pc4.1
+2020-09-27T12:54:41: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:54:41: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:54:41: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:54:41: %AETEST-INFO: STEP 1 - Starting action execute on device 'PC2'      Passed
+2020-09-27T12:54:41: %AETEST-INFO: STEP 1.1 - Executing 'traceroute 10.0.4.100' on 'PC2'    Passed
+2020-09-27T12:54:41: %AETEST-INFO: STEP 1.1.1 - Verify that '192.168.0.1' is included in the output    Passed
+2020-09-27T12:54:41: %AETEST-INFO: STEP 2 - Starting action sleep                        Passed
+2020-09-27T12:54:41: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:54:41: %AETEST-INFO: The result of section traceroute_pc2_pc4.1 is => PASSED
+2020-09-27T12:54:41: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:54:41: %AETEST-INFO: |                      Starting section unshut_interface                       |
+2020-09-27T12:54:41: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:54:41: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:41: %AETEST-INFO: :        Starting STEP 1: Starting action configure on device 'iosv-3'         :
+2020-09-27T12:54:41: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:41: %AETEST-INFO: +..............................................................................+
+2020-09-27T12:54:41: %AETEST-INFO: :                   Starting STEP 1.1: Configuring 'iosv-3'                    :
+2020-09-27T12:54:41: %AETEST-INFO: +..............................................................................+
+
+2020-09-27 12:54:41,780: %UNICON-INFO: +++ iosv-3: configure +++
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface gigabitEthernet 0/2
+Router(config-if)#no shutdown
+Router(config-if)#end
+Router#
+2020-09-27T12:54:42: %AETEST-INFO: The result of STEP 1.1: Configuring 'iosv-3' is => PASSED
+2020-09-27T12:54:42: %AETEST-INFO: The result of STEP 1: Starting action configure on device 'iosv-3' is => PASSED
+2020-09-27T12:54:42: %GENIE-INFO: Saved passed in variable unshut_interface
+2020-09-27T12:54:42: %GENIE-INFO: Saved passed in variable TraceRoute_Test.unshut_interface
+2020-09-27T12:54:42: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:54:42: %AETEST-INFO: |                       STEPS Report                       |
+2020-09-27T12:54:42: %AETEST-INFO: +----------------------------------------------------------+
+2020-09-27T12:54:42: %AETEST-INFO: STEP 1 - Starting action configure on device 'iosv-3'    Passed
+2020-09-27T12:54:42: %AETEST-INFO: STEP 1.1 - Configuring 'iosv-3'                       Passed
+2020-09-27T12:54:42: %AETEST-INFO: ------------------------------------------------------------
+2020-09-27T12:54:42: %AETEST-INFO: The result of section unshut_interface is => PASSED
+2020-09-27T12:54:42: %AETEST-INFO: The result of testcase TraceRoute_Test.uut is => PASSED
+2020-09-27T12:54:42: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:54:42: %AETEST-INFO: |                           Starting common cleanup                            |
+2020-09-27T12:54:42: %AETEST-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:54:42: %AETEST-INFO: The result of common cleanup is => PASSED
+2020-09-27T12:54:42: %CONTRIB-INFO: WebEx Token not given as argument or in config. No WebEx notification will be sent
+2020-09-27T12:54:42: %EASYPY-INFO: --------------------------------------------------------------------------------
+2020-09-27T12:54:42: %EASYPY-INFO: Job finished. Wrapping up...
+2020-09-27T12:54:43: %EASYPY-INFO: Creating archive file: /home/ubuntu/.pyats/archive/20-Sep/job.2020Sep27_12:53:09.869054.zip
+2020-09-27T12:54:43: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:54:43: %EASYPY-INFO: |                                Easypy Report                                 |
+2020-09-27T12:54:43: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:54:43: %EASYPY-INFO: pyATS Instance   : /home/ubuntu/.local/share/virtualenvs/pyats-6hd_HpJ9
+2020-09-27T12:54:43: %EASYPY-INFO: Python Version   : cpython-3.8.2 (64bit)
+2020-09-27T12:54:43: %EASYPY-INFO: CLI Arguments    : /home/ubuntu/.local/share/virtualenvs/pyats-6hd_HpJ9/bin/pyats run genie --trigger-datafile /home/ubuntu/pyats/OSPF/blitz.yaml --trigger-groups And('enabled') --testbed-file /home/ubuntu/pyats/OSPF/testbed.yaml --subsection-datafile /home/ubuntu/pyats/subsection_datafile.yaml
+2020-09-27T12:54:43: %EASYPY-INFO: User             : ubuntu
+2020-09-27T12:54:43: %EASYPY-INFO: Host Server      : ubuntu-code-server
+2020-09-27T12:54:43: %EASYPY-INFO: Host OS Version  : Ubuntu 20.04 focal (x86_64)
+2020-09-27T12:54:43: %EASYPY-INFO: 
+2020-09-27T12:54:43: %EASYPY-INFO: Job Information
+2020-09-27T12:54:43: %EASYPY-INFO:     Name         : job
+2020-09-27T12:54:43: %EASYPY-INFO:     Start time   : 2020-09-27 12:53:12.442948
+2020-09-27T12:54:43: %EASYPY-INFO:     Stop time    : 2020-09-27 12:54:42.531562
+2020-09-27T12:54:43: %EASYPY-INFO:     Elapsed time : 90.088614
+2020-09-27T12:54:43: %EASYPY-INFO:     Archive      : /home/ubuntu/.pyats/archive/20-Sep/job.2020Sep27_12:53:09.869054.zip
+2020-09-27T12:54:43: %EASYPY-INFO: 
+2020-09-27T12:54:43: %EASYPY-INFO: Total Tasks    : 1 
+2020-09-27T12:54:43: %EASYPY-INFO: 
+2020-09-27T12:54:43: %EASYPY-INFO: Overall Stats
+2020-09-27T12:54:43: %EASYPY-INFO:     Passed     : 9
+2020-09-27T12:54:43: %EASYPY-INFO:     Passx      : 0
+2020-09-27T12:54:43: %EASYPY-INFO:     Failed     : 0
+2020-09-27T12:54:43: %EASYPY-INFO:     Aborted    : 0
+2020-09-27T12:54:43: %EASYPY-INFO:     Blocked    : 0
+2020-09-27T12:54:43: %EASYPY-INFO:     Skipped    : 0
+2020-09-27T12:54:43: %EASYPY-INFO:     Errored    : 0
+2020-09-27T12:54:43: %EASYPY-INFO: 
+2020-09-27T12:54:43: %EASYPY-INFO:     TOTAL      : 9
+2020-09-27T12:54:43: %EASYPY-INFO: 
+2020-09-27T12:54:43: %EASYPY-INFO: Success Rate   : 100.00 %
+2020-09-27T12:54:43: %EASYPY-INFO: 
+2020-09-27T12:54:43: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:54:43: %EASYPY-INFO: |                             Task Result Summary                              |
+2020-09-27T12:54:43: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:54:43: %EASYPY-INFO: Task-1: genie_testscript.common_setup                                     PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: Task-1: genie_testscript.OSPF_Cost_Test.uut                               PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: Task-1: genie_testscript.OSPF_LSDB_Test.uut                               PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: Task-1: genie_testscript.OSPF_Neighbors_Test.uut                          PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: Task-1: genie_testscript.Passive_Interface_Test.uut                       PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: Task-1: genie_testscript.Ping_Test.uut                                    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: Task-1: genie_testscript.Router_ID_Test.uut                               PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: Task-1: genie_testscript.TraceRoute_Test.uut                              PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: Task-1: genie_testscript.common_cleanup                                   PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: 
+2020-09-27T12:54:43: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:54:43: %EASYPY-INFO: |                             Task Result Details                              |
+2020-09-27T12:54:43: %EASYPY-INFO: +------------------------------------------------------------------------------+
+2020-09-27T12:54:43: %EASYPY-INFO: Task-1: genie_testscript
+2020-09-27T12:54:43: %EASYPY-INFO: |-- common_setup                                                          PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   `-- connect                                                           PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |-- OSPF_Cost_Test.uut                                                    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   `-- lsdb_ios1                                                         PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1: Starting action execute on device 'iosv-1'            PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1.1: Executing 'show ip ospf interface brief' on '...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1.1.1: Verify that '10' is included in the output        PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 2: Starting action api on device 'iosv-2'                PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 2.1: Calling API 'get_ospf_neighbors_in_state' on ...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       `-- STEP 2.1.1: Verify that '['10.0.0.3', '10.0.0.1']' is i...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |-- OSPF_LSDB_Test.uut                                                    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   `-- ping_check                                                        PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1: Starting action execute on device 'iosv-2'            PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1.1: Executing 'show ip ospf database' on 'iosv-2'       PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1.1.1: Verify that '10.0.0.1' is included in the o...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1.1.2: Verify that '10.0.0.2' is included in the o...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1.1.3: Verify that '10.0.0.3' is included in the o...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       `-- STEP 1.1.4: Verify that '10.0.0.4' is included in the o...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |-- OSPF_Neighbors_Test.uut                                               PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   `-- check_neighbor_list                                               PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1: Starting action api on device 'iosv-2'                PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1.1: Calling API 'get_ospf_neighbors_in_state' on ...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       `-- STEP 1.1.1: Verify that '['10.0.0.3', '10.0.0.1']' is i...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |-- Passive_Interface_Test.uut                                            PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   `-- verify_passive_interface                                          PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1: Starting action execute on device 'iosv-2'            PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1.1: Executing 'show ip protocols' on 'iosv-2'           PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       `-- STEP 1.1.1: Verify that 'GigabitEthernet0/3' is include...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |-- Ping_Test.uut                                                         PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |-- ping_check_pc1_pc2                                                PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1: Starting action execute on device 'PC1'               PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1.1: Executing 'ping -c 5 10.0.2.100' on 'PC1'           PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1.1.1: Verify that '64' is included in the output        PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1.1.2: Verify that '100% packet loss' is excluded ...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   `-- STEP 2: Starting action sleep                                 PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |-- ping_check_pc1_pc3                                                PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1: Starting action execute on device 'PC1'               PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1.1: Executing 'ping -c 5 10.0.3.100' on 'PC1'           PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1.1.1: Verify that '64' is included in the output        PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   `-- STEP 1.1.2: Verify that '100% packet loss' is excluded ...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |-- ping_check_pc1_pc4                                                PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1: Starting action execute on device 'PC1'               PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1.1: Executing 'ping -c 5 10.0.4.100' on 'PC1'           PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   `-- STEP 1.1.1: Verify that '100% packet loss' is excluded ...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |-- ping_pc3_pc4                                                      PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1: Starting action execute on device 'PC3'               PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1.1: Executing 'ping -c 5 10.0.4.100' on 'PC3'           PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   `-- STEP 1.1.1: Verify that '100% packet loss' is excluded ...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |-- ping_pc2_pc3                                                      PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1: Starting action execute on device 'PC2'               PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1.1: Executing 'ping -c 5 10.0.3.100' on 'PC2'           PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   `-- STEP 1.1.1: Verify that '100% packet loss' is excluded ...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   `-- ping_pc2_pc4                                                      PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1: Starting action execute on device 'PC2'               PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1.1: Executing 'ping -c 5 10.0.4.100' on 'PC2'           PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       `-- STEP 1.1.1: Verify that '100% packet loss' is excluded ...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |-- Router_ID_Test.uut                                                    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   `-- ping_check                                                        PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1: Starting action execute on device 'iosv-2'            PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1.1: Executing 'show ip protocols' on 'iosv-2'           PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       `-- STEP 1.1.1: Verify that 'Router ID 10.0.0.2' is include...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |-- TraceRoute_Test.uut                                                   PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |-- traceroute_pc2_pc4                                                PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1: Starting action execute on device 'PC2'               PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1.1: Executing 'traceroute 10.0.4.100' on 'PC2'          PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   `-- STEP 1.1.1: Verify that '192.168.1.2' is included in th...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |-- shut_interface                                                    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1: Starting action configure on device 'iosv-3'          PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1.1: Configuring 'iosv-3'                                PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   `-- STEP 2: Starting action sleep                                 PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |-- traceroute_pc2_pc4.1                                              PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1: Starting action execute on device 'PC2'               PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1.1: Executing 'traceroute 10.0.4.100' on 'PC2'          PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   |-- STEP 1.1.1: Verify that '192.168.0.1' is included in th...    PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   |   `-- STEP 2: Starting action sleep                                 PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |   `-- unshut_interface                                                  PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       |-- STEP 1: Starting action configure on device 'iosv-3'          PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: |       `-- STEP 1.1: Configuring 'iosv-3'                                PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: `-- common_cleanup                                                        PASSED
+2020-09-27T12:54:43: %EASYPY-INFO: Sending report email...
+2020-09-27T12:54:43: %EASYPY-INFO: Missing SMTP server configuration, or failed to reach/authenticate/send mail. Result notification email failed to send.
+2020-09-27T12:54:43: %EASYPY-INFO: Done!
+
+Pro Tip
+-------
+   Try the following command to view your logs:
+       pyats logs view
+
