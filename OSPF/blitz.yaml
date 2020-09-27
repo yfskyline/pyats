@@ -7,6 +7,8 @@ vars:
   device6: pc4
   device7: iosv-1
   device8: iosv-2
+  device9: iosv-3
+  device10: iosv-4
 
 # Name of the testcase
 Ping_Test:
@@ -85,7 +87,7 @@ OSPF_Cost_Test:
               - "10"
         - api:
             description: get the api value and verify the output
-            device: uut
+            device: iosv-2
             function: get_ospf_neighbors_in_state
             arguments:
               state: full
@@ -100,7 +102,7 @@ OSPF_Neighbors_Test:
   test_sections:
     - check_neighbor_list:
         - api:
-            device: uut
+            device: iosv-2
             function: get_ospf_neighbors_in_state
             arguments:
               state: full
@@ -115,7 +117,7 @@ OSPF_LSDB_Test:
   test_sections:
     - ping_check:
         - execute:
-            device: uut
+            device: iosv-2
             command: "show ip ospf database"
             include:
               - "10.0.0.1"
@@ -166,7 +168,7 @@ Router_ID_Test:
   test_sections:
     - ping_check:
         - execute:
-            device: uut
+            device: iosv-2
             command: "show ip protocols"
             include:
               - "Router ID 10.0.0.2"
@@ -179,7 +181,7 @@ Passive_Interface_Test:
   test_sections:
     - verify_passive_interface:
         - execute:
-            device: uut
+            device: iosv-2
             command: "show ip protocols"
             include:
               - "GigabitEthernet0/3"
@@ -193,7 +195,7 @@ Test_Blitz_behavior:
   test_sections:
     - test_parser:
         - execute:
-            device: uut
+            device: iosv-2
             command: show ip ospf database
             banner: test parser(show ip ospf database)
             include:
