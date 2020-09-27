@@ -131,7 +131,7 @@ TraceRoute_Test:
     - traceroute_pc2_pc4:
         - execute:
             device: pc2
-            command: "traceroute 10.0.4.100"
+            command: "traceroute 10.0.4.100 -n"
             include:
               - "192.168.1.2"
     - shut_interface:
@@ -141,15 +141,13 @@ TraceRoute_Test:
               interface gigabitEthernet 0/2
               shutdown
         - sleep:
-            sleep_time: 3
+            sleep_time: 7
     - traceroute_pc2_pc4:
         - execute:
             device: pc2
-            command: "traceroute 10.0.4.100"
+            command: "traceroute 10.0.4.100 -n"
             include:
               - "192.168.0.1"
-        - sleep:
-            sleep_time: 3
     - unshut_interface:
         - configure:
             device: iosv-3
