@@ -1,0 +1,10 @@
+# skip common_setup(show run commands at all nodes)
+setup:
+    sections:
+      connect:
+        method: genie.harness.commons.connect
+
+    order: ['connect']
+cleanup:
+  sections:
+  order: []
