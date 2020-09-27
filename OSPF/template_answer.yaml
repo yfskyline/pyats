@@ -22,7 +22,7 @@ nodes:
       service timestamps log datetime msec
       no service password-encryption
       !
-      hostname Router
+      hostname iosv-2
       !
       boot-start-marker
       boot-end-marker
@@ -200,7 +200,7 @@ nodes:
       service timestamps log datetime msec
       no service password-encryption
       !
-      hostname Router
+      hostname iosv-1
       !
       boot-start-marker
       boot-end-marker
@@ -378,7 +378,7 @@ nodes:
       service timestamps log datetime msec
       no service password-encryption
       !
-      hostname Router
+      hostname iosv-4
       !
       boot-start-marker
       boot-end-marker
@@ -556,7 +556,7 @@ nodes:
       service timestamps log datetime msec
       no service password-encryption
       !
-      hostname Router
+      hostname iosv-3
       !
       boot-start-marker
       boot-end-marker
