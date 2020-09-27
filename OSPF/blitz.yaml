@@ -11,7 +11,7 @@ vars:
   device10: iosv-4
 
 # Name of the testcase
-Ping_Test:
+1_Ping_Test:
   # description of the testcase
   description: "full-mesh ping test between linux hosts"
   # Only run tests in groups marked with "test"
@@ -69,7 +69,7 @@ Ping_Test:
               command: "ping -c 3 10.0.4.100 -i 0.01 -W 5"
               exclude:
                 - "100% packet loss"
-OSPF_Cost_Test:
+2_OSPF_Cost_Test:
   description: "verify if the cost of ospf is appropriate"
   groups: ["enabled"]
   source:
@@ -90,7 +90,7 @@ OSPF_Cost_Test:
               state: full
             include:
               - ["10.0.0.3", "10.0.0.1"]
-OSPF_Neighbors_Test:
+3_OSPF_Neighbors_Test:
   description: get the api value and verify the output
   groups: ["enabled"]
   source:
@@ -105,7 +105,7 @@ OSPF_Neighbors_Test:
               state: full
             include:
               - ["10.0.0.3", "10.0.0.1"]
-OSPF_LSDB_Test:
+4_OSPF_LSDB_Test:
   description: verify the neighbors are all in place
   groups: ["enabled"]
   source:
@@ -121,7 +121,7 @@ OSPF_LSDB_Test:
               - "10.0.0.2"
               - "10.0.0.3"
               - "10.0.0.4"
-TraceRoute_Test:
+5_TraceRoute_Test:
   description: verify if shutting down the interface changes the path
   groups: ["enabled"]
   source:
@@ -154,7 +154,7 @@ TraceRoute_Test:
             command: |
               interface gigabitEthernet 0/2
               no shutdown
-Router_ID_Test:
+6_Router_ID_Test:
   description: verify if the router-id is appropriate
   groups: ["enabled"]
   source:
@@ -167,7 +167,7 @@ Router_ID_Test:
             command: "show ip protocols"
             include:
               - "Router ID 10.0.0.2"
-Passive_Interface_Test:
+7_Passive_Interface_Test:
   description: verify if the passive-interface configuration is appropriate
   groups: ["enabled"]
   source:
