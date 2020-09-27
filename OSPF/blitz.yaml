@@ -33,8 +33,6 @@ Ping_Test:
               - "64"
             exclude:
               - "100% packet loss"
-        - sleep:
-            sleep_time: 3
     # Second section name
     - ping_check_pc1_pc3:
         # Action #2
@@ -200,3 +198,5 @@ Test_Blitz_behavior:
             banner: test parser(show ip ospf database)
             include:
               - "10.0.0.1"
+        - sleep:
+          sleep_time: 5
