@@ -26,6 +26,9 @@ Ping_Test:
     # Section name - Can be any name, it will show as the first section of the testcase
     - ping_check_pc1_pc2:
         # List of actions
+        # Send ping command to the device "pc1" and verify  if part of a string is in the output or not
+        # Use Parallel Processing to reduce the test time.
+#    - ping_check_pc1_pc2:
         - parallel:
           - execute:
               device: pc1
@@ -34,19 +37,18 @@ Ping_Test:
                 - "64"
               exclude:
                 - "100% packet loss"
-#    - ping_check_pc1_pc3:
-        # Send ping command to the device "pc1" and verify  if part of a string is in the output or not
+#    - ping_check_pc3_pc1:
           - execute:
-              device: pc1
-              command: "ping -c 5 10.0.3.100"
+              device: pc3
+              command: "ping -c 5 10.0.1.100"
               include:
                 - "64"
               exclude:
                 - "100% packet loss"
-#    - ping_check_pc1_pc4:
+#    - ping_check_pc4_pc1:
           - execute:
-              device: pc1
-              command: "ping -c 5 10.0.4.100"
+              device: pc4
+              command: "ping -c 5 10.0.1.100"
               exclude:
                 - "100% packet loss"
 #    - ping_pc3_pc4:
